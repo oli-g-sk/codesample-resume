@@ -95,6 +95,49 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
   ]
 )
 
+#grid(
+  columns: (5fr, 2fr), [
+    COMPANY NAME
+  ],
+  [
+    #align(right)[
+      BLANK
+    ]
+  ]
+)
+
+#grid(
+  columns: (5fr, 2fr), [
+    PROJECT
+    - achievement
+    - achievement
+    - achievement
+    - achievement
+  ],
+  [
+    #align(right)[
+      DATES
+    ]
+  ]
+)
+
+#grid(
+  columns: (5fr, 2fr), [
+    PROJECT
+    - achievement
+    - achievement
+    - achievement
+    - achievement
+  ],
+  [
+    #align(right)[
+      DATES
+    ]
+  ]
+)
+
+#pagebreak()
+
 == Chyron
 
 === C\# / .NET Developer
