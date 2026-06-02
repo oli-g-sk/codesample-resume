@@ -57,10 +57,12 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 ### C# / .NET Developer
 **Nov 2025 – Feb 2026**
 
+Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework written in WPF.
+
 #### Key Achievements
 
-- Completed migration of a desktop application's UI layer from DevExpress to an internally developed UI framework.
-- Helped eliminate third-party UI dependencies and improve long-term maintainability.
+- Integrated key parts of a custom WPF framework into a mission-critical application under a tight deadline.
+- Added meaningful improvements to several custom widgets to support their long-term usability and maintainability.
 
 ---
 
@@ -74,7 +76,6 @@ Worked on the company's flagship broadcast graphics platform used in live televi
 #### Key Achievements
 
 - Developed new features and maintained production-critical functionality.
-- Fixed issues reported from customer deployments.
 - Performed extensive refactoring and technical debt reduction.
 - Created internal tools that improved productivity for developers and support teams.
 - Delivered UX and usability improvements that received direct recognition from NBC.
