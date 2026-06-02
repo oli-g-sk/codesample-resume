@@ -1,0 +1,195 @@
+# Oliver Gašpar
+
+**Senior Software Engineer / Full Stack Developer**  
+Brno, Czech Republic
+
+📧 oliver.g.sk@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/oliver-gašpar-b8281852
+
+---
+
+# Professional Summary
+
+Software engineer with 10+ years of experience building desktop, web, and mobile applications.
+
+My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. While UI development is my strongest area, I am equally comfortable working on backend services, APIs, and application architecture.
+
+I enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and building software that is pleasant to use both for customers and for fellow engineers.
+
+---
+
+# Technologies
+
+## Languages & Frameworks
+
+- C#
+- .NET
+- ASP.NET Core
+- WPF
+- Windows Forms
+- Xamarin
+- Android (Java)
+- Flutter
+- gRPC
+
+## Architecture & Practices
+
+- Software Architecture
+- Test-Driven Development (TDD)
+- Refactoring
+- Technical Debt Reduction
+- Performance Optimization
+- UI / UX Design
+- Code Reviews
+
+## Tools
+
+- Git
+- Visual Studio
+- Azure DevOps
+
+---
+
+# Professional Experience
+
+## Bagira
+### C# / .NET Developer
+**Nov 2025 – Feb 2026**
+
+#### Key Achievements
+
+- Completed migration of a desktop application's UI layer from DevExpress to an internally developed UI framework.
+- Helped eliminate third-party UI dependencies and improve long-term maintainability.
+
+---
+
+## Chyron
+
+### C# / .NET Developer
+**Oct 2022 – Oct 2025**
+
+Worked on the company's flagship broadcast graphics platform used in live television production.
+
+#### Key Achievements
+
+- Developed new features and maintained production-critical functionality.
+- Fixed issues reported from customer deployments.
+- Performed extensive refactoring and technical debt reduction.
+- Created internal tools that improved productivity for developers and support teams.
+- Delivered UX and usability improvements that received direct recognition from NBC.
+- Worked on both a high-end 3D design environment and a real-time broadcast control system where reliability and responsiveness were critical.
+
+### C# / .NET Developer
+**Oct 2021 – Sep 2022**
+
+Worked on a cloud-oriented platform exposing functionality of the company's primary product through web technologies.
+
+#### Key Achievements
+
+- Developed backend services using ASP.NET Core.
+- Implemented new APIs and endpoints.
+- Exposed functionality through gRPC services.
+- Maintained strong focus on code quality and test-driven development.
+
+### C# / .NET Developer
+**Oct 2020 – Sep 2021**
+
+Worked in a small team building a specialized product based on the company's existing platform.
+
+#### Key Achievements
+
+- Developed new application functionality beyond the UI layer.
+- Contributed to engine-level features and business logic.
+- Helped design and implement architecture for a new product experience.
+
+---
+
+## Turing Technology
+### Software Developer
+**Apr 2018 – Sep 2020**
+
+Worked on multiple long-term internal projects.
+
+#### Key Achievements
+
+- Independently developed a native Android application in Java from scratch.
+- Delivered a polished UI ready for backend integration.
+- Joined development of a Forex trading desktop platform.
+- Led major parts of WPF UI implementation and performance optimization.
+- Contributed to architecture decisions and engineering best practices.
+- Experimented with Flutter as part of internal research efforts.
+
+---
+
+## EmbedIT
+### Android Developer
+**Oct 2019 – Dec 2019**
+
+Short-term Android development engagement.
+
+---
+
+## Self-Employed
+### Xamarin Android Developer
+**Sep 2017 – Mar 2018**
+
+Developed Android applications using Xamarin.
+
+---
+
+## Cleevio
+### Android Developer
+**Feb 2017 – Aug 2017**
+
+Worked on multiple Android projects.
+
+#### Key Achievements
+
+- Integrated video advertising into the Evropa 2 mobile application.
+- Developed a new mobile application combining concepts from recruitment platforms and social-media-style stories.
+
+---
+
+## Self-Employed
+### Xamarin Android Developer
+**Apr 2015 – Feb 2017**
+
+Developed a social networking application from scratch in a two-person team.
+
+#### Key Achievements
+
+- Owned Android implementation and platform integration.
+- Designed and refined UI according to Material Design principles.
+- Worked within a shared Xamarin codebase.
+- Utilized Parse as a Backend-as-a-Service solution.
+
+---
+
+## Masaryk University
+### Web Developer
+**Mar 2013 – Sep 2013**
+
+#### Key Achievements
+
+- Maintained and developed public-facing websites for the Faculty of Law.
+- Developed and maintained internal systems used by employees and external collaborators.
+
+---
+
+# Education
+
+## Applied Informatics
+Masaryk University, Brno
+
+**2009 – 2014**
+
+---
+
+# Languages
+
+| Language | Level |
+|-----------|--------|
+| Slovak | Native |
+| Czech | Native |
+| English | Professional Working Proficiency |
+| German | Elementary |
