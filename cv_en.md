@@ -27,8 +27,11 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 - REST API & gRPC
 - PostgreSQL
 - WPF, Windows Forms
-- Java, Spring Boot
-- Xamarin, Flutter, Blazor
+- Java, Kotlin
+- Android SDK
+- Spring Boot
+- Xamarin, Blazor
+- Flutter, Avalonia
 
 ## Architecture & Practices
 
