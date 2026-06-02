@@ -1,9 +1,9 @@
 # Oliver Gašpar
 
-**Senior Software Engineer / Full Stack Developer**  
+**Senior Software Engineer**  
 Brno, Czech Republic
 
-📧 oliver.g.sk@gmail.com  
+📧 E-mail: oliver.g.sk@gmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/oliver-gašpar-b8281852
 
 ---
