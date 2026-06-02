@@ -7,7 +7,7 @@
   #it.body
 ]
 
-#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.5em))[
+#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em))[
   #it.body
 ]
 
@@ -55,11 +55,15 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
   columns: (1fr, 1fr),
   gutter: 1.2cm,
   [
+    #show list.where(): it => block(inset:  (top: 0em, bottom: -1em))[
+      #it
+    ]
     == Languages & Frameworks
 
     - C\# / .NET
     - ASP.NET Core
     - REST API, gRPC
+    - Entity Framework / EFCore
     - WPF, Windows Forms
     - PostgreSQL
     - SQL Server
@@ -67,30 +71,30 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
     - Android SDK
     - Spring Boot
     - Xamarin, Blazor
-    - Flutter, Avalonia
+    - Avalonia, Flutter
+    - HTML / CSS
   ],
   [
     == Architecture & Practices
 
-    #show list.where(): it => block(inset: (top: 0em, bottom: -1em))[
+    #show list.where(): it => block(inset: (top: 0em, bottom: -1.5em))[
       #it
     ]
-    
+
     - Model-View-ViewModel (MVVM)
     - Test-Driven Development (TDD)
     - Performance Optimization
-    - Technical Debt Reduction
-    - Refactoring
-    - Code Reviews
-    - CI / CD
+    - Refactoring, Code Reviews
     - UI / UX Design
+    - CI / CD
 
     == Tools
     
-    - Git, Bitbucket
+    - Git
+    - Docker
+    - Bitbucket
     - Azure DevOps
     - Jenkins
-    - Docker
   ],
 )
 
@@ -261,6 +265,7 @@ Key achievements:
 - Delivered a polished UI ready for backend integration.
 - Joined development of a Forex trading desktop platform.
 - Led major parts of WPF UI implementation and performance optimization.
+- Opportunity to implement UX improvements based on my feedback.
 - Contributed to architecture decisions and engineering best practices.
 - Experimented with Flutter as part of internal research efforts.
 
