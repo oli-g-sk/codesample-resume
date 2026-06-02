@@ -24,7 +24,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 - C# / .NET
 - ASP.NET Core
-- REST API & gRPC
+- REST API, gRPC
 - WPF, Windows Forms
 - PostgreSQL
 - SQL Server
@@ -51,7 +51,6 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 - Azure DevOps
 - Jenkins
 - Docker
-- OpenAI
 
 ---
 
