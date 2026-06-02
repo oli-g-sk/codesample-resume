@@ -1,0 +1,47 @@
+<Window x:Class="EyedropperSandbox.EyedropperWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Width="156"
+        Height="156"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ShowInTaskbar="False"
+        Topmost="True"
+        ResizeMode="NoResize"
+        KeyDown="Window_KeyDown"
+        MouseDown="Window_MouseDown"
+        MouseWheel="Window_MouseWheel">
+    <Window.Resources>
+        <sys:Double x:Key="SizeFull">120</sys:Double>
+    </Window.Resources>
+    <Grid>
+        <Ellipse Width="128"
+                 Height="128"
+                 Fill="#E0111418"
+                 Stroke="#CCF5F7FA"
+                 StrokeThickness="3"/>
+        <Image x:Name="ImgPreview"
+               Width="120"
+               Height="120"
+               Stretch="Fill">
+            <Image.Clip>
+                <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60"/>
+            </Image.Clip>
+        </Image>
+        <Ellipse x:Name="RingColor"
+                 Width="128"
+                 Height="128"
+                 Stroke="#FFFFFFFF"
+                 StrokeThickness="5"/>
+        <Path Stroke="#FFFFFFFF"
+              StrokeThickness="2"
+              Data="M78,18 L78,57 M78,99 L78,138 M18,78 L57,78 M99,78 L138,78"/>
+        <Ellipse Width="10"
+                 Height="10"
+                 Stroke="#FF111418"
+                 StrokeThickness="2"
+                 Fill="#FFFFFFFF"/>
+    </Grid>
+</Window>
