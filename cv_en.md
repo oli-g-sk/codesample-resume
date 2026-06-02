@@ -147,18 +147,21 @@ Worked on multiple Android projects.
 
 ---
 
-## Self-Employed
+## YouWakeMe
 ### Xamarin Android Developer
-**Apr 2015 – Feb 2017**
+**Apr 2015 – Mar 2018**
 
-Developed a social networking application from scratch in a two-person team.
+Developed an award-winning cross-platform mobile application from scratch as part of a two-person team.
 
 #### Key Achievements
 
-- Owned Android implementation and platform integration.
-- Designed and refined UI according to Material Design principles.
-- Worked within a shared Xamarin codebase.
-- Utilized Parse as a Backend-as-a-Service solution.
+- Collaborated on a shared Xamarin codebase across multiple platforms.
+- Owned Android implementation and most platform-specific integrations.
+- Collaborated on UI design, adapting shared designs to Android while advocating for Material Design principles and a native Android user experience.
+- Utilized Parse as a Backend-as-a-Service (BaaS) platform.
+- Took part in defining codebase architecture and selection of tooling.
+- Helped shape a unique concept combining an alarm clock with social networking features.
+- The app won both main awards at Czech AppParade 25.
 
 ---
 
