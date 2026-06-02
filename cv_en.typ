@@ -3,17 +3,20 @@
 #set text(size: 9.5pt, font: "Noto Sans")
 #set list(indent: 0.5em, body-indent: 0.45em)
 
-#show heading.where(level: 1): it => block(inset: (bottom: 0.25em))[
+#show heading.where(level: 1): it => block(inset: (bottom: 0.5em))[
   #it.body
 ]
 
-#show heading.where(level: 2): it => block(inset: (top: 0.25em))[
+#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.5em))[
   #it.body
 ]
 
 #show list.where(): it => block(inset: (top: 0.25em, bottom: 1em))[
   #it
 ]
+
+#set par(justify: true)
+#set list(body-indent: 0.75em)
 
 #let section-rule = block(above: 3em)[
   #line(length: 100%, stroke: 0.2pt)
@@ -93,15 +96,23 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 #section-rule
 
+#pagebreak()
+
 = Professional Experience
+
 
 #grid(
   columns: (5fr, 2fr), [
-    == Bagira
+    == Bagira Systems
+  ],
+  []
+)
 
-    Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
-
-    === Key achievements:
+#grid(
+  columns: (5fr, 2fr), [
+      Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
+      
+    === Key achievements
     
     - Integrated key parts of a custom WPF framework into a mission-critical application under a tight deadline.
     - Added meaningful improvements to several custom widgets to support their long-term usability and maintainability.
@@ -126,7 +137,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 #grid(
   columns: (5fr, 2fr), [
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus malesuada quam non porta. Donec sapien purus, fermentum sit amet purus eget, egestas aliquam neque. Proin faucibus scelerisque ex vitae eleifend.
-    === Key achievements:
+    === Key achievements
     - achievement
     - achievement
     - achievement
@@ -143,7 +154,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 #grid(
   columns: (5fr, 2fr), [
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    === Key achievements:
+    === Key achievements
     - achievement
     - achievement
     - achievement
@@ -167,7 +178,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 #grid(
   columns: (5fr, 2fr), [
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus malesuada quam non porta. Donec sapien purus, fermentum sit amet purus eget, egestas aliquam neque. Proin faucibus scelerisque ex vitae eleifend.
-    === Key achievements:
+    === Key achievements
     - achievement
     - achievement
     - achievement
@@ -184,7 +195,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus malesuada q
 #grid(
   columns: (5fr, 2fr), [
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    === Key achievements:
+    === Key achievements
     - achievement
     - achievement
     - achievement
