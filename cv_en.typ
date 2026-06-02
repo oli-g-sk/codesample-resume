@@ -1,23 +1,7 @@
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
-#set text(size: 9.5pt)
-#set par(leading: 0.52em, spacing: 0.62em)
-#set list(indent: 1em, body-indent: 0.45em)
-
-#show heading.where(level: 1): it => block(above: 0.95em, below: 0.45em)[
-  #set text(size: 13pt, weight: "bold")
-  #it.body
-]
-
-#show heading.where(level: 2): it => block(above: 0.7em, below: 0.25em)[
-  #set text(size: 10.5pt, weight: "bold")
-  #it.body
-]
-
-#show heading.where(level: 3): it => block(above: 0.2em, below: 0.15em)[
-  #set text(size: 9.5pt, weight: "semibold")
-  #it.body
-]
+#set text(size: 9.5pt, font: "Noto Sans")
+#set list(indent: 0.5em, body-indent: 0.45em)
 
 #let section-rule = line(length: 100%, stroke: 0.45pt)
 
@@ -95,6 +79,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 == Bagira
 === C\# / .NET Developer
 *Nov 2025 - Feb 2026*
+
 
 Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
 
