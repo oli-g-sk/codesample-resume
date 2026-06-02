@@ -21,7 +21,17 @@
 
 #let section-rule = line(length: 100%, stroke: 0.45pt)
 
-#align(center)[
+/* TODO to be used for alt. layout
+#grid(
+  columns: (1fr, 2fr),
+  gutter: 1em,
+
+  [Left column],
+  [Right column],
+)
+*/
+
+#align(left)[
   #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
   #text(size: 11pt)[Senior Software Engineer] \
   Brno, Czech Republic \
@@ -120,7 +130,7 @@ Key achievements:
 - Exposed functionality through gRPC services.
 - Maintained strong focus on code quality and test-driven development.
 
-=== C# / .NET Developer (WPF)
+=== C\# / .NET Developer (WPF)
 *Oct 2020 - Sep 2021*
 
 Worked in a small team building a specialized product based on the company's existing platform.

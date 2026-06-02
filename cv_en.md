@@ -99,10 +99,11 @@ Worked on a cloud-oriented platform exposing functionality of the company's prim
 ### C# / .NET Developer
 **Oct 2020 – Sep 2021**
 
-Worked in a small team building a specialized product based on the company's existing platform.
+Worked with a small team building a specialized product based on the company's existing platform.
 
 #### Key Achievements
 
+- Opportunity to have significant impact on the application's UI.
 - Developed new application functionality beyond the UI layer.
 - Contributed to engine-level features and business logic.
 - Helped design and implement architecture for a new product experience.
