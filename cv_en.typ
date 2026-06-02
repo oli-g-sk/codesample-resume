@@ -41,37 +41,44 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 = Technologies
 
-== Languages & Frameworks
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 1.2cm,
+  [
+    == Languages & Frameworks
 
-- C\# / .NET
-- ASP.NET Core
-- REST API, gRPC
-- WPF, Windows Forms
-- PostgreSQL
-- SQL Server
-- Java, Kotlin
-- Android SDK
-- Spring Boot
-- Xamarin, Blazor
-- Flutter, Avalonia
+    - C\# / .NET
+    - ASP.NET Core
+    - REST API, gRPC
+    - WPF, Windows Forms
+    - PostgreSQL
+    - SQL Server
+    - Java, Kotlin
+    - Android SDK
+    - Spring Boot
+    - Xamarin, Blazor
+    - Flutter, Avalonia
+  ],
+  [
+    == Architecture & Practices
 
-== Architecture & Practices
+    - Model-View-ViewModel (MVVM)
+    - Test-Driven Development (TDD)
+    - Performance Optimization
+    - Technical Debt Reduction
+    - Refactoring
+    - Code Reviews
+    - CI / CD
+    - UI / UX Design
 
-- Model-View-ViewModel (MVVM)
-- Test-Driven Development (TDD)
-- Performance Optimization
-- Technical Debt Reduction
-- Refactoring
-- Code Reviews
-- CI / CD
-- UI / UX Design
+    == Tools
 
-== Tools
-
-- Git, Bitbucket
-- Azure DevOps
-- Jenkins
-- Docker
+    - Git, Bitbucket
+    - Azure DevOps
+    - Jenkins
+    - Docker
+  ],
+)
 
 = Professional Experience
 
