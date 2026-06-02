@@ -35,11 +35,11 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 ## Architecture & Practices
 
-- Software Architecture
+- Model-View-ViewModel (MVVM)
 - Test-Driven Development (TDD)
-- Refactoring
-- Technical Debt Reduction
 - Performance Optimization
+- Technical Debt Reduction
+- Refactoring
 - Code Reviews
 - CI / CD
 - UI / UX Design
