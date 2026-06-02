@@ -134,14 +134,6 @@ Short-term Android development engagement.
 
 ---
 
-## Self-Employed
-### Xamarin Android Developer
-**Sep 2017 – Mar 2018**
-
-Developed Android applications using Xamarin.
-
----
-
 ## Cleevio
 ### Android Developer
 **Feb 2017 – Aug 2017**
