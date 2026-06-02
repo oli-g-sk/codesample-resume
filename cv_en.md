@@ -142,8 +142,8 @@ Worked on multiple Android projects.
 
 #### Key Achievements
 
-- Integrated video advertising into the Evropa 2 mobile application.
-- Developed a new mobile application combining concepts from recruitment platforms and social-media-style stories.
+- Integrated video advertising into the mobile application of a major Czech radio station.
+- Worked on a new mobile application combining concepts from recruitment platforms and social-media-style stories.
 
 ---
 
@@ -168,7 +168,7 @@ Developed a social networking application from scratch in a two-person team.
 
 #### Key Achievements
 
-- Maintained and developed public-facing websites for the Faculty of Law.
+- Maintained and updated public-facing websites for the Faculty of Law.
 - Developed and maintained internal systems used by employees and external collaborators.
 
 ---
