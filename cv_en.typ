@@ -76,17 +76,24 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 = Professional Experience
 
-== Bagira
-=== C\# / .NET Developer
-*Nov 2025 - Feb 2026*
+#grid(
+  columns: (5fr, 2fr), [
+    == Bagira
 
+    Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
 
-Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
-
-Key achievements:
-
-- Integrated key parts of a custom WPF framework into a mission-critical application under a tight deadline.
-- Added meaningful improvements to several custom widgets to support their long-term usability and maintainability.
+    === Key achievements:
+    
+    - Integrated key parts of a custom WPF framework into a mission-critical application under a tight deadline.
+    - Added meaningful improvements to several custom widgets to support their long-term usability and maintainability.
+  ],
+  [
+    #align(right)[
+      === C\# / .NET Developer
+      *Nov 2025 - Feb 2026*
+    ]
+  ]
+)
 
 == Chyron
 
