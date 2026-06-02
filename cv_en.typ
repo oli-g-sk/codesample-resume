@@ -101,7 +101,7 @@ Key achievements:
 - Delivered UX and usability improvements that received direct recognition from NBC.
 - Worked on both a high-end 3D design environment and a real-time broadcast control system where reliability and responsiveness were critical.
 
-=== C\# / .NET Developer
+=== C\# / .NET Developer (ASP.NET Core)
 *Oct 2021 - Sep 2022*
 
 Worked on a cloud-oriented platform exposing functionality of the company's primary product through web technologies.
@@ -113,7 +113,7 @@ Key achievements:
 - Exposed functionality through gRPC services.
 - Maintained strong focus on code quality and test-driven development.
 
-=== C\# / .NET Developer
+=== C# / .NET Developer (WPF)
 *Oct 2020 - Sep 2021*
 
 Worked in a small team building a specialized product based on the company's existing platform.
