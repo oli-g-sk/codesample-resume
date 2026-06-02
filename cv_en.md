@@ -22,15 +22,13 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 ## Languages & Frameworks
 
-- C#
-- .NET
+- C# / .NET
 - ASP.NET Core
-- WPF
-- Windows Forms
-- Xamarin
-- Android (Java)
-- Flutter
-- gRPC
+- REST API & gRPC
+- PostgreSQL
+- WPF, Windows Forms
+- Java, Spring Boot
+- Xamarin, Flutter, Blazor
 
 ## Architecture & Practices
 
@@ -39,14 +37,17 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 - Refactoring
 - Technical Debt Reduction
 - Performance Optimization
-- UI / UX Design
 - Code Reviews
+- CI / CD
+- UI / UX Design
 
 ## Tools
 
-- Git
+- Git, Bitbucket
 - Visual Studio
 - Azure DevOps
+- Docker
+- OpenAI
 
 ---
 
