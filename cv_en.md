@@ -25,8 +25,9 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 - C# / .NET
 - ASP.NET Core
 - REST API & gRPC
-- PostgreSQL
 - WPF, Windows Forms
+- PostgreSQL
+- SQL Server
 - Java, Kotlin
 - Android SDK
 - Spring Boot
@@ -47,8 +48,8 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 ## Tools
 
 - Git, Bitbucket
-- Visual Studio
 - Azure DevOps
+- Jenkins
 - Docker
 - OpenAI
 
@@ -60,7 +61,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 ### C# / .NET Developer
 **Nov 2025 – Feb 2026**
 
-Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework written in WPF.
+Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
 
 #### Key Achievements
 
