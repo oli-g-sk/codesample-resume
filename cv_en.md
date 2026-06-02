@@ -12,9 +12,9 @@ Brno, Czech Republic
 
 Software engineer with 10+ years of experience building desktop, web, and mobile applications.
 
-My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. While UI development is my strongest area, I am equally comfortable working on backend services, APIs, and application architecture.
+My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from native UI development to backend services, API design, and overall application architecture.
 
-I enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and building software that is pleasant to use both for customers and for fellow engineers.
+I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
 
 ---
 
