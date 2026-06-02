@@ -15,7 +15,9 @@
   #it
 ]
 
-#let section-rule = line(length: 100%, stroke: 0.45pt)
+#let section-rule = block(above: 3em)[
+  #line(length: 100%, stroke: 0.2pt)
+]
 
 /* TODO to be used for alt. layout
 #grid(
@@ -27,13 +29,12 @@
 )
 */
 
-#align(left)[
-  #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
-  #text(size: 11pt)[Senior Software Engineer] \
-  Brno, Czech Republic \
-  E-mail: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-  LinkedIn: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
-]
+
+#text(size: 18pt, weight: "bold")[Oliver Gašpar] \
+#text(size: 11pt)[Senior Software Engineer] \
+Brno, Czech Republic \
+E-mail: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
+LinkedIn: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
 
 #section-rule
 
@@ -68,6 +69,10 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
   [
     == Architecture & Practices
 
+    #show list.where(): it => block(inset: (top: 0em, bottom: -1em))[
+      #it
+    ]
+    
     - Model-View-ViewModel (MVVM)
     - Test-Driven Development (TDD)
     - Performance Optimization
@@ -78,12 +83,15 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
     - UI / UX Design
 
     == Tools
+    
     - Git, Bitbucket
     - Azure DevOps
     - Jenkins
     - Docker
   ],
 )
+
+#section-rule
 
 = Professional Experience
 
