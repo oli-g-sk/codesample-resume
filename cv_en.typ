@@ -100,8 +100,6 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
 
 #section-rule
 
-#pagebreak()
-
 = Professional Experience
 
 
@@ -129,137 +127,82 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
   ]
 )
 
-#pagebreak()
-
 #grid(
   columns: (5fr, 2fr), [
-    == COMPANY
+    == Chyron
   ],
   []
 )
 
 #grid(
   columns: (5fr, 2fr), [
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus malesuada quam non porta. Donec sapien purus, fermentum sit amet purus eget, egestas aliquam neque. Proin faucibus scelerisque ex vitae eleifend.
-    === Key achievements
-    - achievement
-    - achievement
-    - achievement
-    - achievement
-  ],
-  [
-    #align(right)[
-      === C\# / .NET Developer
-      *Jan 1970 - Sep 1999*
-    ]
-  ]
-)
+Worked on the company's flagship broadcast graphics platform used in live television production (not only) by major U.S. televsion networks..
 
-#grid(
-  columns: (5fr, 2fr), [
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    === Key achievements
-    - achievement
-    - achievement
-    - achievement
-    - achievement
-  ],
-  [
-    #align(right)[
-      === C\# / .NET Developer
-      *Jan 1970 - Sep 1999*
-    ]
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-    == COMPANY
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus malesuada quam non porta. Donec sapien purus, fermentum sit amet purus eget, egestas aliquam neque. Proin faucibus scelerisque ex vitae eleifend.
-    === Key achievements
-    - achievement
-    - achievement
-    - achievement
-    - achievement
-  ],
-  [
-    #align(right)[
-      === C\# / .NET Developer
-      *Jan 1970 - Sep 1999*
-    ]
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    === Key achievements
-    - achievement
-    - achievement
-    - achievement
-    - achievement
-  ],
-  [
-    #align(right)[
-      === C\# / .NET Developer
-      *Jan 1970 - Sep 1999*
-    ]
-  ]
-)
-
-#pagebreak()
-
-== Chyron
-
-=== C\# / .NET Developer
-*Oct 2022 - Oct 2025*
-
-Worked on the company's flagship broadcast graphics platform used in live television production.
-
-Key achievements:
+=== Key achievements
 
 - Developed new features and maintained production-critical functionality.
-- Performed extensive refactoring and technical debt reduction.
+- Advocated for technical debt reduction by doing even small refactorings whenever possible.
 - Created internal tools that improved productivity for developers and support teams.
 - Delivered UX and usability improvements that received direct recognition from NBC.
 - Worked on both a high-end 3D design environment and a real-time broadcast control system where reliability and responsiveness were critical.
+  ],
+  [
+    #align(right)[
+      === C\# / .NET Developer
+      *Sep 2022 - Oct 2025*
+    ]
+  ]
+)
 
-=== C\# / .NET Developer (ASP.NET Core)
-*Oct 2021 - Sep 2022*
+#grid(
+  columns: (5fr, 2fr), [
+Took major part in building a greenfield project -- a cloud-oriented platform exposing functionality of the company's primary product through web technologies.
 
-Worked on a cloud-oriented platform exposing functionality of the company's primary product through web technologies.
-
-Key achievements:
+=== Key achievements
 
 - Developed backend services using ASP.NET Core.
 - Implemented new APIs and endpoints.
 - Exposed functionality through gRPC services.
 - Maintained strong focus on code quality and test-driven development.
+  ],
+  [
+    #align(right)[
+      === C\# / .NET Developer
+      *Oct 2021 - Sep 2022*
+    ]
+  ]
+)
 
-=== C\# / .NET Developer (WPF)
-*Oct 2020 - Sep 2021*
+#grid(
+  columns: (5fr, 2fr), [
+Worked in a small team building a specialized product based on the company's existing broadcast platform.
 
-Worked in a small team building a specialized product based on the company's existing platform.
-
-Key achievements:
+=== Key achievements
 
 - Developed new application functionality beyond the UI layer.
 - Contributed to engine-level features and business logic.
 - Helped design and implement architecture for a new product experience.
+  ],
+  [
+    #align(right)[
+      === C\# / .NET Developer
+      *Oct 2020 - Sep 2021*
+    ]
+  ]
+)
 
-== Turing Technology
-=== Software Developer
-*Apr 2018 - Sep 2020*
+#grid(
+  columns: (5fr, 2fr), [
+    == Turing Technology
+  ],
+  []
+)
 
+#grid(
+  columns: (5fr, 2fr), [
 Worked on multiple long-term internal projects.
 
-Key achievements:
+=== Key achievements
 
 - Independently developed a native Android application in Java from scratch.
 - Delivered a polished UI ready for backend integration.
@@ -268,31 +211,71 @@ Key achievements:
 - Opportunity to implement UX improvements based on my feedback.
 - Contributed to architecture decisions and engineering best practices.
 - Experimented with Flutter as part of internal research efforts.
+  ],
+  [
+    #align(right)[
+      === C\# / .NET Developer
+      *Apr 2018 - Sep 2020*
+    ]
+  ]
+)
 
-== EmbedIT
-=== Android Developer
-*Oct 2019 - Dec 2019*
+#grid(
+  columns: (5fr, 2fr), [
+    == EmbedIT
+  ],
+  []
+)
 
-Short-term Android development engagement.
+#grid(
+  columns: (5fr, 2fr), [
+  Short-term Android development engagement involving updatring and maintaing an internal native application developed in Java and Kotlin.
+  ],
+  [
+    #align(right)[
+      === Android Developer
+      *Oct 2019 - Dec 2019*
+    ]
+  ]
+)
 
-== Cleevio
-=== Android Developer
-*Feb 2017 - Aug 2017*
+#grid(
+  columns: (5fr, 2fr), [
+    == Cleevio
+  ],
+  []
+)
 
-Worked on multiple Android projects.
+#grid(
+  columns: (5fr, 2fr), [
 
-Key achievements:
+Worked on multiple Android projects for a well-recognized development house responsible for award winning apps like Spendee.
+
+=== Key achievements
 
 - Integrated video advertising into the mobile application of a major Czech radio station.
 - Worked on a new mobile application combining concepts from recruitment platforms and social-media-style stories.
+  ],
+  [
+    #align(right)[
+      === Android Developer
+      *Feb 2017 - Aug 2017*
+    ]
+  ]
+)
 
-== YouWakeMe
-=== Xamarin Android Developer
-*Apr 2015 - Mar 2018*
+#grid(
+  columns: (5fr, 2fr), [
+    == YouWakeMe
+  ],
+  []
+)
 
+#grid(
+  columns: (5fr, 2fr), [
 Developed an award-winning cross-platform mobile application from scratch as part of a two-person team.
 
-Key achievements:
+=== Key achievements
 
 - Collaborated on a shared Xamarin codebase across multiple platforms.
 - Owned Android implementation and most platform-specific integrations.
@@ -301,15 +284,38 @@ Key achievements:
 - Took part in defining codebase architecture and selection of tooling.
 - Helped shape a unique concept combining an alarm clock with social networking features.
 - The app won both main awards at Czech AppParade 25.
+  ],
+  [
+    #align(right)[
+      === .NET / Android Developer
+      *Apr 2015 - Mar 2018*
+    ]
+  ]
+)
 
-== Masaryk University
-=== Web Developer
-*Mar 2013 - Sep 2013*
 
-Key achievements:
+#grid(
+  columns: (5fr, 2fr), [
+    == Masaryk University
+  ],
+  []
+)
+
+#grid(
+  columns: (5fr, 2fr), [
 
 - Maintained and updated public-facing websites for the Faculty of Law.
 - Developed and maintained internal systems used by employees and external collaborators.
+  ],
+  [
+    #align(right)[
+      === PHP / Web Developer
+      *Mar 2013 - Sep 2013*
+    ]
+  ]
+)
+
+#section-rule
 
 = Education
 
