@@ -15,7 +15,7 @@
   #it
 ]
 
-#set par(justify: true)
+#set par(justify: false)
 #set list(body-indent: 0.75em)
 
 #let section-rule = block(above: 3em)[
@@ -32,24 +32,30 @@
 )
 */
 
-
-#text(size: 18pt, weight: "bold")[Oliver Gašpar] \
-#text(size: 11pt)[Senior Software Engineer] \
-Brno, Czech Republic \
-E-mail: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-LinkedIn: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
+#grid(
+  columns: (5fr, 2fr), [
+    #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
+    #text(size: 11pt)[Senior Software Engineer] \
+    Brno, Czech Republic \
+    E-mail: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
+    LinkedIn: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
+  ],
+  []
+)
 
 #section-rule
 
-= Professional Summary
+#grid(
+  columns: (5fr, 2fr), [
+    = Professional Summary
 
-Software engineer with 10+ years of experience building desktop, web, and mobile applications.
+    Software engineer with 10+ years of experience building desktop, web, and mobile applications.
 
-My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from native UI development to backend services, API design, and overall application architecture.
+    My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from native UI development to backend services, API design, and overall application architecture.
+    
+    I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
 
-I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
-
-= Technologies
+    = Technologies
 
 #grid(
   columns: (1fr, 1fr),
@@ -97,6 +103,9 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
     - Jenkins
   ],
 )
+  ],
+  []
+)
 
 #section-rule
 
@@ -122,6 +131,7 @@ I also enjoy modernizing legacy systems, reducing technical debt, improving deve
   [
     #align(right)[
       === C\# / .NET Developer
+      
       *Nov 2025 - Feb 2026*
     ]
   ]
