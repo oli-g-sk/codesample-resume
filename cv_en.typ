@@ -179,11 +179,14 @@ Worked on the company's *flagship broadcast graphics platform* centered around a
 
 === Key achievements
 
-- Developed new features and maintained production-critical functionality.
-- Advocated for *technical debt reduction* by doing even small refactorings whenever possible.
-- Created *internal tools* that improved productivity for developers and support teams.
-- Delivered UX and usability improvements that received direct *recognition from NBC*.
 - Worked on both a high-end 3D design environment and a real-time broadcast control system where *reliability and responsiveness* were critical.
+- *Refactored* a large part of *operation-critical* code which *fixed a bug* that was raising *customer issues monthly*.
+- Delivered UX and usability *improvements ahead of a major sports event* that received *direct recognition from NBC*.
+- *Fixed* lots of *unpredictable behavior* caused by the UI being a *hybrid of WPF and Windows Forms*.
+- Developed new features and maintained production-critical functionality.
+- Advocated for *technical debt reduction* by refactoring whenever possible.
+- Contributed to continuous effort of migrating from Windows Forms to WPF
+- Created *internal tools* that improved productivity for developers and support teams.
   ],
   [
     #align(right)[
