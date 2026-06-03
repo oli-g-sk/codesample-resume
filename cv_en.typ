@@ -1,3 +1,21 @@
+
+#let section-rule = block(above: 3em)[
+  #line(length: 100%, stroke: 0.2pt)
+]
+
+#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
+  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
+]
+
+#let tip(body) = block(
+  fill: rgb("#eef6ff"),
+  inset: 0.8em,
+  radius: 4pt,
+  stroke: rgb("#b6d4fe"),
+)[
+  *Tip:* #body
+]
+
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
 #set text(size: 9.5pt, font: "Noto Sans")
@@ -7,7 +25,7 @@
   #it.body
 ]
 
-#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em))[
+#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
   #it.body
 ]
 
@@ -17,14 +35,6 @@
 
 #set par(justify: false)
 #set list(body-indent: 0.75em)
-
-#let section-rule = block(above: 3em)[
-  #line(length: 100%, stroke: 0.2pt)
-]
-
-#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
-  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
-]
 
 /* TODO to be used for alt. layout
 #grid(
@@ -137,11 +147,11 @@
 #grid(
   columns: (5fr, 2fr), [
       Worked on *eliminating third-party UI dependencies* (DevExpress) in favor of an in-house UI framework.
+        
+      === Key achievements
       
-    === Key achievements
-    
-    - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
-    - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
+      - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
+      - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
   ],
   [
     #align(right)[
@@ -200,7 +210,7 @@ Took major part in building a greenfield project -- *a cloud-oriented platform* 
 
 #grid(
   columns: (5fr, 2fr), [
-Worked in a small team building a specialized product based on the company's existing broadcast platform.
+Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.
 
 === Key achievements
 
@@ -316,7 +326,6 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
   ]
 )
 
-
 #grid(
   columns: (5fr, 2fr), [
     == Masaryk University
@@ -340,22 +349,36 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 
 #section-rule
 
-= Education
-
-== Applied Informatics
-Masaryk University, Brno
-
-*2009 - 2014*
-
-= Languages
+#grid(column-gutter: 1em,
+  columns: (2fr, 2fr),
+  [
+        = Languages
 
 #table(
   columns: (auto, 1fr),
-  inset: 4pt,
-  stroke: 0.35pt,
+  inset: 0pt,
+  gutter: 1em,
+  column-gutter: 4em,
+  stroke: 0pt,
   [*Language*], [*Level*],
+  [English], [Fluent],
   [Slovak], [Native],
   [Czech], [Native],
-  [English], [Professional Working Proficiency],
   [German], [Elementary],
 )
+  ],
+  [
+    #show heading.where(level: 2): it => block(inset: (top: 0em, bottom: 0em), sticky: true)[
+      #it.body
+    ]
+    = Education
+    === Applied Informatics
+    Masaryk University, Brno\
+    *2009 - 2014*
+  ],
+  [
+  ]
+)
+
+
+
