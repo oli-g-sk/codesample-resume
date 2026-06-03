@@ -137,7 +137,7 @@
 
 = Professional Experience
 
-#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em))[
+#show heading.where(level: 2): it => block(inset: (top: 0.9em, bottom: 0.2em))[
   #it.body
 ]
 
@@ -203,9 +203,9 @@ Took major part in building a greenfield project -- *a cloud-oriented platform* 
 === Key achievements
 
 - Developed backend services using *ASP.NET Core*.
-- Implemented *new APIs* and endpoints.
-- Exposed functionality through *gRPC*.
-- Maintained strong focus on code quality and test-driven development.
+- Implemented *new API endpoints* and exposed them through *gRPC*.
+- My *knowledge from the previous project* helped me and the team with *integrating a major audio mixing feature*.
+- Maintained strong focus on code quality and *test-driven development*.
   ],
   [
     #align(right)[
@@ -221,7 +221,7 @@ Worked in a small team building a new, specialized product wrapped around the co
 
 === Key achievements
 
-- Developed new application functionality beyond the UI layer.
+- Responsible for major parts of the UI and functionality which was the heart of the new product
 - Contributed to *engine-level features* and business logic.
 - Helped design and implement architecture for a new product experience.
   ],
@@ -383,7 +383,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
       stroke: 0pt,
       [*Applied Informatics*],
       [Masaryk University, Brno],
-      [2009-2014]
+      [2009-2014],
     )
   ],
   [
