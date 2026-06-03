@@ -22,6 +22,10 @@
   #line(length: 100%, stroke: 0.2pt)
 ]
 
+#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
+  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
+]
+
 /* TODO to be used for alt. layout
 #grid(
   columns: (1fr, 2fr),
@@ -32,18 +36,26 @@
 )
 */
 
+
+#set list(marker: "")
+
 #grid(
   columns: (5fr, 2fr), [
-    #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
-    #text(size: 11pt)[Senior Software Engineer] \
-    Brno, Czech Republic \
-    E-mail: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-    LinkedIn: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
+    #block(inset: (bottom: 0.75em))[
+      #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
+      #text(size: 11pt)[Senior Software Engineer] \
+    ] 
+    Brno, *Czech Republic* \
+    *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
+    *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
   ],
-  []
+  [
+  ]
 )
 
 #section-rule
+
+#set list(marker: list-marker)
 
 #grid(
   columns: (5fr, 2fr), [
