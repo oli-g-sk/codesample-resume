@@ -49,9 +49,9 @@
   columns: (5fr, 2fr), [
     = Professional Summary
 
-    Software engineer with 10+ years of experience building desktop, web, and mobile applications.
+    Software engineer with *10+ years of experience* building *desktop, web, and mobile* applications.
 
-    My primary expertise is in the .NET ecosystem, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from native UI development to backend services, API design, and overall application architecture.
+    My primary expertise is in the *.NET ecosystem*, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from *native UI development* to *backend services*, *API design*, and overall application architecture.
     
     I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
 
@@ -111,6 +111,9 @@
 
 = Professional Experience
 
+#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em))[
+  #it.body
+]
 
 #grid(
   columns: (5fr, 2fr), [
@@ -121,12 +124,12 @@
 
 #grid(
   columns: (5fr, 2fr), [
-      Worked on eliminating third-party UI dependencies (DevExpress) in favor of an in-house UI framework.
+      Worked on *eliminating third-party UI dependencies* (DevExpress) in favor of an in-house UI framework.
       
     === Key achievements
     
-    - Integrated key parts of a custom WPF framework into a mission-critical application under a tight deadline.
-    - Added meaningful improvements to several custom widgets to support their long-term usability and maintainability.
+    - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
+    - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
   ],
   [
     #align(right)[
@@ -146,15 +149,15 @@
 
 #grid(
   columns: (5fr, 2fr), [
-Worked on the company's flagship broadcast graphics platform used in live television production (not only) by major U.S. televsion networks..
+Worked on the company's *flagship broadcast graphics platform* centered around a *desktop application* used both for designing and real-time operation. used in live television production (not only) by major U.S. televsion networks..
 
 === Key achievements
 
 - Developed new features and maintained production-critical functionality.
-- Advocated for technical debt reduction by doing even small refactorings whenever possible.
-- Created internal tools that improved productivity for developers and support teams.
-- Delivered UX and usability improvements that received direct recognition from NBC.
-- Worked on both a high-end 3D design environment and a real-time broadcast control system where reliability and responsiveness were critical.
+- Advocated for *technical debt reduction* by doing even small refactorings whenever possible.
+- Created *internal tools* that improved productivity for developers and support teams.
+- Delivered UX and usability improvements that received direct *recognition from NBC*.
+- Worked on both a high-end 3D design environment and a real-time broadcast control system where *reliability and responsiveness* were critical.
   ],
   [
     #align(right)[
@@ -166,13 +169,13 @@ Worked on the company's flagship broadcast graphics platform used in live televi
 
 #grid(
   columns: (5fr, 2fr), [
-Took major part in building a greenfield project -- a cloud-oriented platform exposing functionality of the company's primary product through web technologies.
+Took major part in building a greenfield project -- *a cloud-oriented platform* exposing functionality of the company's primary product through web technologies.
 
 === Key achievements
 
-- Developed backend services using ASP.NET Core.
-- Implemented new APIs and endpoints.
-- Exposed functionality through gRPC services.
+- Developed backend services using *ASP.NET Core*.
+- Implemented *new APIs* and endpoints.
+- Exposed functionality through *gRPC*.
 - Maintained strong focus on code quality and test-driven development.
   ],
   [
@@ -190,7 +193,7 @@ Worked in a small team building a specialized product based on the company's exi
 === Key achievements
 
 - Developed new application functionality beyond the UI layer.
-- Contributed to engine-level features and business logic.
+- Contributed to *engine-level features* and business logic.
 - Helped design and implement architecture for a new product experience.
   ],
   [
@@ -210,21 +213,20 @@ Worked in a small team building a specialized product based on the company's exi
 
 #grid(
   columns: (5fr, 2fr), [
-Worked on multiple long-term internal projects.
+Worked on multiple short and long term *projects across platforms and stacks* in a fast growing, fintech-focused startup.
 
 === Key achievements
 
-- Independently developed a native Android application in Java from scratch.
-- Delivered a polished UI ready for backend integration.
-- Joined development of a Forex trading desktop platform.
-- Led major parts of WPF UI implementation and performance optimization.
-- Opportunity to implement UX improvements based on my feedback.
-- Contributed to architecture decisions and engineering best practices.
-- Experimented with Flutter as part of internal research efforts.
+- Independently developed a *native Android* application in Java *from scratch*.
+- Delivered a *polished UI* ready for backend integration.
+- Joined development of a Forex trading *desktop platform*.
+- Led major parts of *WPF UI* implementation and performance optimization.
+- Contributed to *architecture decisions* and engineering best practices.
+- Experimented with *Flutter* as part of internal research efforts.
   ],
   [
     #align(right)[
-      === C\# / .NET Developer
+      === Software Developer
       *Apr 2018 - Sep 2020*
     ]
   ]
@@ -259,12 +261,12 @@ Worked on multiple long-term internal projects.
 #grid(
   columns: (5fr, 2fr), [
 
-Worked on multiple Android projects for a well-recognized development house responsible for award winning apps like Spendee.
+Worked on *multiple Android projects* for a well-recognized development house responsible for award winning apps like Spendee.
 
 === Key achievements
 
-- Integrated video advertising into the mobile application of a major Czech radio station.
-- Worked on a new mobile application combining concepts from recruitment platforms and social-media-style stories.
+- *Integrated video advertising* into the mobile application of a *major Czech radio* station.
+- Worked on a new application combining concepts from recruitment platforms and social-media-style stories in a small team of three.
   ],
   [
     #align(right)[
@@ -283,17 +285,16 @@ Worked on multiple Android projects for a well-recognized development house resp
 
 #grid(
   columns: (5fr, 2fr), [
-Developed an award-winning cross-platform mobile application from scratch as part of a two-person team.
+Developed a *cross-platform mobile app* combining an alarm clock with social media features as part of a *two-person team*.
 
 === Key achievements
 
-- Collaborated on a shared Xamarin codebase across multiple platforms.
-- Owned Android implementation and most platform-specific integrations.
-- Collaborated on UI design, adapting shared designs to Android while advocating for Material Design principles and a native Android user experience.
+- Collaborated on a *shared Xamarin codebase*.
+- *Owned Android implementation* and most platform-specific integrations.
+- Collaborated on UI design, adapting shared designs to Android while *advocating for Material Design principles* and a native Android user experience.
 - Utilized Parse as a Backend-as-a-Service (BaaS) platform.
-- Took part in defining codebase architecture and selection of tooling.
 - Helped shape a unique concept combining an alarm clock with social networking features.
-- The app won both main awards at Czech AppParade 25.
+- The released app *won both main awards at Czech AppParade 25*.
   ],
   [
     #align(right)[
@@ -315,7 +316,7 @@ Developed an award-winning cross-platform mobile application from scratch as par
   columns: (5fr, 2fr), [
 
 - Maintained and updated public-facing websites for the Faculty of Law.
-- Developed and maintained internal systems used by employees and external collaborators.
+- Developed and *maintained internal systems* used by employees and external collaborators.
   ],
   [
     #align(right)[
