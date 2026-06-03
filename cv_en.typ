@@ -1,5 +1,5 @@
 
-#let section-rule = block(above: 3em)[
+#let section-rule = block(above: 2.75em, below: 2.75em)[
   #line(length: 100%, stroke: 0.2pt)
 ]
 
@@ -51,9 +51,12 @@
 
 #grid(
   columns: (5fr, 2fr), [
-    #block(inset: (bottom: 0.75em))[
-      #text(size: 18pt, weight: "bold")[Oliver Gašpar] \
-      #text(size: 11pt)[Senior Software Engineer] \
+    #block(below: 2em, inset: (top: 3em))[
+      #text(size: 22pt, weight: "semibold")[Oliver Gašpar]
+      
+      #block(above: 0.85em)[
+        #text(size: 14pt, style: "italic")[Senior Software Engineer]
+      ]
     ] 
     Brno, *Czech Republic* \
     *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
@@ -64,6 +67,7 @@
 )
 
 #section-rule
+
 
 #set list(marker: list-marker)
 
@@ -76,7 +80,7 @@
     My primary expertise is in the *.NET ecosystem*, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from *native UI development* to *backend services*, *API design*, and overall application architecture.
     
     I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
-
+    
     = Technologies
 
 #grid(
@@ -350,33 +354,37 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 #section-rule
 
 #grid(column-gutter: 1em,
-  columns: (2fr, 2fr),
+  columns: (2fr, 2.5fr),
   [
-        = Languages
-
-#table(
-  columns: (auto, 1fr),
-  inset: 0pt,
-  gutter: 1em,
-  column-gutter: 4em,
-  stroke: 0pt,
-  [*Language*], [*Level*],
-  [English], [Fluent],
-  [Slovak], [Native],
-  [Czech], [Native],
-  [German], [Elementary],
-)
+    = Languages
+    #table(
+      columns: (1fr, 1.5fr),
+      inset: 0pt,
+      gutter: 1em,
+      column-gutter: 1em,
+      stroke: 0pt,
+      [*Language*], [*Level*],
+      [English], [Fluent],
+      [Slovak], [Native],
+      [Czech], [Native],
+      [German], [Elementary],
+    )
   ],
   [
-    #show heading.where(level: 2): it => block(inset: (top: 0em, bottom: 0em), sticky: true)[
-      #it.body
-    ]
     = Education
-    === Applied Informatics
-    Masaryk University, Brno\
-    *2009 - 2014*
+    #table(
+      columns: (1fr),
+      inset: 0pt,
+      gutter: 1em,
+      column-gutter: 1em,
+      stroke: 0pt,
+      [*Applied Informatics*],
+      [Masaryk University, Brno],
+      [2009-2014]
+    )
   ],
   [
+
   ]
 )
 
