@@ -50,7 +50,7 @@
 #set list(marker: "")
 
 #grid(
-  columns: (5fr, 2fr), [
+  columns: (5fr, 3fr), [
     #block(below: 2em, inset: (top: 3em))[
       #text(size: 22pt, weight: "semibold")[Oliver Gašpar]
       
@@ -63,6 +63,9 @@
     *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
   ],
   [
+    #align(right)[
+      #image("photo.jpg", width: 5cm)
+    ]
   ]
 )
 
@@ -75,9 +78,9 @@
   columns: (5fr, 2fr), [
     = Professional Summary
 
-    Software engineer with *10+ years of experience* building *desktop, web, and mobile* applications.
-
-    My primary expertise is in the *.NET ecosystem*, with a strong focus on user experience, maintainable architecture, and code quality. I am equally comfortable working across the full stack, from *native UI development* to *backend services*, *API design*, and overall application architecture.
+    Software engineer with *10+ years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
+    
+    I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
     
     I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
     
