@@ -1,7 +1,4 @@
-
-#let section-rule = block(above: 2.75em, below: 2.75em)[
-  #line(length: 100%, stroke: 0.2pt)
-]
+#let section-rule = block(above: 2.75em, below: 2.75em)[ #line(length: 100%, stroke: 0.2pt) ]
 
 #let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
   #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
@@ -15,6 +12,24 @@
 )[
   *Tip:* #body
 ]
+
+#let block-role(role, dates, tech) = block(
+  [
+    #align(right)[
+      #table(
+        stroke: 0em,
+        inset: 0em,
+        row-gutter: 0.75em,
+        columns: 1fr,
+        [*#role*],
+        [*#dates*],
+        [#block(inset: (top: 0.5em))[
+          #emph(tech)
+        ]]
+      )
+    ]
+  ]
+)
 
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
@@ -64,7 +79,8 @@
   ],
   [
     #align(right)[
-      #image("photo.jpg", width: 5cm)
+      #image(
+        "photo.jpg", width: 5cm)
     ]
   ]
 )
@@ -161,11 +177,11 @@
       - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
   ],
   [
-    #align(right)[
-      === C\# / .NET Developer
-      
-      *Nov 2025 - Feb 2026*
-    ]
+    #block-role(
+      ".NET Developer",
+      "Nov 2025 - Feb 2026",
+      "C# / .NET, WPF"
+    )
   ]
 )
 
@@ -192,10 +208,12 @@ Worked on the company's *flagship broadcast graphics platform* centered around a
 - Created *internal tools* that improved productivity for developers and support teams.
   ],
   [
-    #align(right)[
-      === C\# / .NET Developer
-      *Sep 2022 - Oct 2025*
-    ]
+    #block-role(
+      ".NET Developer",
+      "Sep 2022 - Oct 2025",
+      "C#/.NET, WPF, WinForms,
+      ASP.NET Core, gRPC, Jenkins"
+    )
   ]
 )
 
@@ -211,10 +229,12 @@ Took major part in building a greenfield project -- *a cloud-oriented platform* 
 - Maintained strong focus on code quality and *test-driven development*.
   ],
   [
-    #align(right)[
-      === C\# / .NET Developer
-      *Oct 2021 - Sep 2022*
-    ]
+    #block-role(
+      ".NET Developer",
+      "Oct 2021 - Sep 2022",
+      "C#/.NET, ASP.NET Core,
+      gRPC, Mapster, xUnit"
+    )
   ]
 )
 
@@ -229,10 +249,11 @@ Worked in a small team building a new, specialized product wrapped around the co
 - Helped design and implement architecture for a new product experience.
   ],
   [
-    #align(right)[
-      === C\# / .NET Developer
-      *Oct 2020 - Sep 2021*
-    ]
+    #block-role(
+      ".NET Developer",
+      "Oct 2020 - Sep 2021",
+      "C# / .NET, WPF"
+    )
   ]
 )
 
@@ -257,10 +278,12 @@ Worked on multiple short and long term *projects across platforms and stacks* in
 - Experimented with *Flutter* as part of internal research efforts.
   ],
   [
-    #align(right)[
-      === Software Developer
-      *Apr 2018 - Sep 2020*
-    ]
+    #block-role(
+      "Software Developer",
+      "Apr 2018 - Sep 2020",
+      "C# / .NET, WPF,
+      Android, Java, Flutter"
+    )
   ]
 )
 
@@ -301,10 +324,11 @@ Worked on *multiple Android projects* for a well-recognized development house re
 - Worked on a new application combining concepts from recruitment platforms and social-media-style stories in a small team of three.
   ],
   [
-    #align(right)[
-      === Android Developer
-      *Feb 2017 - Aug 2017*
-    ]
+    #block-role(
+      "Android Developer",
+      "Feb 2017 - Aug 2017",
+      "Android, Java, Kotlin"
+    )
   ]
 )
 
@@ -329,10 +353,11 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 - The released app *won both main awards at Czech AppParade 25*.
   ],
   [
-    #align(right)[
-      === .NET / Android Developer
-      *Apr 2015 - Mar 2018*
-    ]
+    #block-role(
+      "Android Developer",
+      "Apr 2015 - Mar 2018",
+      "C# / .NET, Xamarin, Android"
+    )   
   ]
 )
 
