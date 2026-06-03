@@ -1,35 +1,4 @@
-#let section-rule = block(above: 2.75em, below: 2.75em)[ #line(length: 100%, stroke: 0.2pt) ]
-
-#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
-  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
-]
-
-#let tip(body) = block(
-  fill: rgb("#eef6ff"),
-  inset: 0.8em,
-  radius: 4pt,
-  stroke: rgb("#b6d4fe"),
-)[
-  *Tip:* #body
-]
-
-#let block-role(role, dates, tech) = block(
-  [
-    #align(right)[
-      #table(
-        stroke: 0em,
-        inset: 0em,
-        row-gutter: 0.75em,
-        columns: 1fr,
-        [*#role*],
-        [*#dates*],
-        [#block(inset: (top: 0.5em))[
-          #emph(tech)
-        ]]
-      )
-    ]
-  ]
-)
+#import "components.typ": *
 
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
@@ -98,8 +67,8 @@
     
     I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
     
-    I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is intuitive for users and maintainable for engineering teams.
-    
+    I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is *intuitive for users* and *maintainable for engineering* teams.
+
     = Technologies
 
 #grid(
@@ -299,10 +268,7 @@ Worked on multiple short and long term *projects across platforms and stacks* in
   Short-term Android development engagement involving updatring and maintaing an internal native application developed in Java and Kotlin.
   ],
   [
-    #align(right)[
-      === Android Developer
-      *Oct 2019 - Dec 2019*
-    ]
+    #block-role("Android Developer", "Oct 2019 - Dec 2019", "")
   ]
 )
 
@@ -375,10 +341,11 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 - Developed and *maintained internal systems* used by employees and external collaborators.
   ],
   [
-    #align(right)[
-      === PHP / Web Developer
-      *Mar 2013 - Sep 2013*
-    ]
+    #block-role(
+      "Web Developer",
+      "Mar 2013 - Sep 2013",
+      "PHP, HTML, CSS"
+    )
   ]
 )
 
