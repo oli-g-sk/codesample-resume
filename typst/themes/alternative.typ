@@ -1,4 +1,4 @@
-#let cv-theme(body) = [
+#let cv-theme-alt(body) = [
   #set text(size: 9.5pt, font: "Arial")
   #set list(indent: 0.5em, body-indent: 0.45em)
 
@@ -9,7 +9,7 @@
   ]
 
   #show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
-    #text()[
+    #text(style: "italic", weight: "regular")[
       #it.body
     ]
   ]

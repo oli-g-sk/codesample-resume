@@ -1,10 +1,11 @@
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
 
-#import "theme.typ": cv-theme
+#import "themes/default.typ": cv-theme-def
+#import "themes/alternative.typ": cv-theme-alt
 #import "components.typ": *
 
-#show: cv-theme
+#show: cv-theme-def
 
 #grid(
   columns: (5fr, 3fr), [
@@ -94,10 +95,6 @@
 #section-rule
 
 = Professional Experience
-
-#show heading.where(level: 2): it => block(inset: (top: 0.9em, bottom: 0.2em))[
-  #it.body
-]
 
 #grid(
   columns: (5fr, 2fr), [
