@@ -80,18 +80,17 @@
     ]
     == Languages & Frameworks
 
-    - C\# / .NET
+    - *C\# / .NET*
     - ASP.NET Core
     - REST API, gRPC
     - Entity Framework / EFCore
-    - WPF, Windows Forms
-    - PostgreSQL
-    - SQL Server
-    - Java, Kotlin
-    - Android SDK
-    - Spring Boot
+    - *WPF*, Windows Forms
+    - *PostgreSQL*, SQL Server
+    - *Java*, Kotlin
+    - *Android SDK*
+    - Spring Boot, JOOQ
     - Xamarin, Blazor
-    - Avalonia, Flutter
+    - *Avalonia*, Flutter
     - HTML / CSS
   ],
   [
@@ -110,11 +109,10 @@
 
     == Tools
     
-    - Git
-    - Docker
-    - Bitbucket
-    - Azure DevOps
-    - Jenkins
+    - *Git*, Bitbucket
+    - Azure DevOps, Jenkins
+    - *Docker*, GitHub Actions
+    - Jira, Confluence
   ],
 )
   ],
@@ -163,18 +161,17 @@
 
 #grid(
   columns: (5fr, 2fr), [
-Worked on the company's *flagship broadcast graphics platform* centered around a *desktop application* used both for designing and real-time operation. used in live television production (not only) by major U.S. televsion networks..
+
+Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were critical.
 
 === Key achievements
 
-- Worked on both a high-end 3D design environment and a real-time broadcast control system where *reliability and responsiveness* were critical.
-- *Refactored* a large part of *operation-critical* code which *fixed a bug* that was raising *customer issues monthly*.
-- Delivered UX and usability *improvements ahead of a major sports event* that received *direct recognition from NBC*.
-- *Fixed* lots of *unpredictable behavior* caused by the UI being a *hybrid of WPF and Windows Forms*.
+- Delivered *UX and usability improvements* ahead of a major sports event, earning *direct recognition from NBC*.
+- *Refactored operation-critical components*, eliminating a long-standing defect responsible for recurring customer issues.
+- *Improved stability and maintainability* of a *complex hybrid WPF/Windows Forms* application through bug fixes, refactoring, and modernization efforts.
 - Developed new features and maintained production-critical functionality.
-- Advocated for *technical debt reduction* by refactoring whenever possible.
-- Contributed to continuous effort of migrating from Windows Forms to WPF
-- Created *internal tools* that improved productivity for developers and support teams.
+- Contributed to the ongoing migration from Windows Forms to WPF.
+- Created *internal tools* that improved productivity for developers and SQA.
   ],
   [
     #block-role(
@@ -194,7 +191,7 @@ Took major part in building a greenfield project -- *a cloud-oriented platform* 
 
 - Developed backend services using *ASP.NET Core*.
 - Implemented *new API endpoints* and exposed them through *gRPC*.
-- My *knowledge from the previous project* helped me and the team with *integrating a major audio mixing feature*.
+- *Integrated a major audio-mixing feature* from the previous project 
 - Maintained strong focus on code quality and *test-driven development*.
   ],
   [
@@ -213,9 +210,8 @@ Worked in a small team building a new, specialized product wrapped around the co
 
 === Key achievements
 
-- Responsible for major parts of the UI and functionality which was the heart of the new product
+- *Responsible for* major parts of the *new UI and features*
 - Contributed to *engine-level features* and business logic.
-- Helped design and implement architecture for a new product experience.
   ],
   [
     #block-role(
@@ -311,10 +307,8 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 
 === Key achievements
 
-- Collaborated on a *shared Xamarin codebase*.
 - *Owned Android implementation* and most platform-specific integrations.
-- Collaborated on UI design, adapting shared designs to Android while *advocating for Material Design principles* and a native Android user experience.
-- Utilized Parse as a Backend-as-a-Service (BaaS) platform.
+- Collaborated on UI design, adapting shared designs to Android while *advocating for native Android user experience*.
 - Helped shape a unique concept combining an alarm clock with social networking features.
 - The released app *won both main awards at Czech AppParade 25*.
   ],

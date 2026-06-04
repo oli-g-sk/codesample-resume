@@ -23,7 +23,7 @@
         columns: 1fr,
         [*#role*],
         [*#dates*],
-        [#block(inset: (top: 0.5em))[
+        [#block(inset: (top: 0.25em))[
           #emph(tech)
         ]]
       )
