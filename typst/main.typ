@@ -146,7 +146,7 @@
   [
     #block-role(
       ".NET Developer",
-      "Nov 2025 - Feb 2026",
+      "Nov 2025 – Feb 2026",
       "C# / .NET, WPF"
     )
   ]
@@ -176,7 +176,7 @@ Worked on the company's *flagship broadcast graphics platform* with a real-time 
   [
     #block-role(
       ".NET Developer",
-      "Sep 2022 - Oct 2025",
+      "Sep 2022 – Oct 2025",
       "C#/.NET, WPF, WinForms,
       ASP.NET Core, gRPC, Jenkins"
     )
@@ -185,19 +185,19 @@ Worked on the company's *flagship broadcast graphics platform* with a real-time 
 
 #grid(
   columns: (5fr, 2fr), [
-Took major part in building a greenfield project -- *a cloud-oriented platform* exposing functionality of the company's primary product through web technologies.
+Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.
 
 === Key achievements
 
 - Developed backend services using *ASP.NET Core*.
 - Implemented *new API endpoints* and exposed them through *gRPC*.
-- *Integrated a major audio-mixing feature* from the previous project 
+- *Integrated a major audio-mixing feature* from the previous project.
 - Maintained strong focus on code quality and *test-driven development*.
   ],
   [
     #block-role(
       ".NET Developer",
-      "Oct 2021 - Sep 2022",
+      "Oct 2021 – Sep 2022",
       "C#/.NET, ASP.NET Core,
       gRPC, Mapster, xUnit"
     )
@@ -210,13 +210,13 @@ Worked in a small team building a new, specialized product wrapped around the co
 
 === Key achievements
 
-- *Responsible for* major parts of the *new UI and features*
+- *Was responsible for* major parts of the *new UI and features*.
 - Contributed to *engine-level features* and business logic.
   ],
   [
     #block-role(
       ".NET Developer",
-      "Oct 2020 - Sep 2021",
+      "Oct 2020 – Sep 2021",
       "C# / .NET, WPF"
     )
   ]
@@ -231,7 +231,7 @@ Worked in a small team building a new, specialized product wrapped around the co
 
 #grid(
   columns: (5fr, 2fr), [
-Worked on multiple short and long term *projects across platforms and stacks* in a fast growing, fintech-focused startup.
+Worked on multiple short- and long-term *projects across platforms and stacks* in a fast-growing, fintech-focused startup.
 
 === Key achievements
 
@@ -245,7 +245,7 @@ Worked on multiple short and long term *projects across platforms and stacks* in
   [
     #block-role(
       "Software Developer",
-      "Apr 2018 - Sep 2020",
+      "Apr 2018 – Sep 2020",
       "C# / .NET, WPF,
       Android, Java, Flutter"
     )
@@ -261,10 +261,10 @@ Worked on multiple short and long term *projects across platforms and stacks* in
 
 #grid(
   columns: (5fr, 2fr), [
-  Short-term Android development engagement involving updatring and maintaing an internal native application developed in Java and Kotlin.
+  Short-term Android development engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
   ],
   [
-    #block-role("Android Developer", "Oct 2019 - Dec 2019", "")
+    #block-role("Android Developer", "Oct 2019 – Dec 2019", "")
   ]
 )
 
@@ -278,7 +278,7 @@ Worked on multiple short and long term *projects across platforms and stacks* in
 #grid(
   columns: (5fr, 2fr), [
 
-Worked on *multiple Android projects* for a well-recognized development house responsible for award winning apps like Spendee.
+Worked on *multiple Android projects* for a well-recognized development house responsible for award-winning apps like Spendee.
 
 === Key achievements
 
@@ -288,7 +288,7 @@ Worked on *multiple Android projects* for a well-recognized development house re
   [
     #block-role(
       "Android Developer",
-      "Feb 2017 - Aug 2017",
+      "Feb 2017 – Aug 2017",
       "Android, Java, Kotlin"
     )
   ]
@@ -315,7 +315,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
   [
     #block-role(
       "Android Developer",
-      "Apr 2015 - Mar 2018",
+      "Apr 2015 – Mar 2018",
       "C# / .NET, Xamarin, Android"
     )   
   ]
@@ -337,7 +337,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
   [
     #block-role(
       "Web Developer",
-      "Mar 2013 - Sep 2013",
+      "Mar 2013 – Sep 2013",
       "PHP, HTML, CSS"
     )
   ]
@@ -372,7 +372,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
       stroke: 0pt,
       [*Applied Informatics*],
       [Masaryk University, Brno],
-      [2009-2014],
+      [2009–2014],
     )
   ],
   [
