@@ -3,11 +3,21 @@
   #set list(indent: 0.5em, body-indent: 0.45em)
 
   #show heading.where(level: 1): it => block(inset: (bottom: 0.5em))[
-    #it.body
+    #text()[
+      #it.body
+    ]
   ]
 
   #show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
-    #it.body
+    #text()[
+      #it.body
+    ]
+  ]
+
+  #show heading.where(level: 3): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
+    #text()[
+      #it.body
+    ]
   ]
 
   #show list.where(): it => block(inset: (top: 0.25em, bottom: 1em))[
