@@ -1,37 +1,10 @@
-#import "components.typ": *
-
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
-#set text(size: 9.5pt, font: "Noto Sans")
-#set list(indent: 0.5em, body-indent: 0.45em)
 
-#show heading.where(level: 1): it => block(inset: (bottom: 0.5em))[
-  #it.body
-]
+#import "theme.typ": cv-theme
+#import "components.typ": *
 
-#show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
-  #it.body
-]
-
-#show list.where(): it => block(inset: (top: 0.25em, bottom: 1em))[
-  #it
-]
-
-#set par(justify: false)
-#set list(body-indent: 0.75em)
-
-/* TODO to be used for alt. layout
-#grid(
-  columns: (1fr, 2fr),
-  gutter: 1em,
-
-  [Left column],
-  [Right column],
-)
-*/
-
-
-#set list(marker: "")
+#show: cv-theme
 
 #grid(
   columns: (5fr, 3fr), [
@@ -55,7 +28,6 @@
 )
 
 #section-rule
-
 
 #set list(marker: list-marker)
 
