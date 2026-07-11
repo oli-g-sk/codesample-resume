@@ -38,3 +38,24 @@ main p {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
+table { 
+    width: 100%;
+
+    th, td { 
+        border: 1px solid black;
+        text-align: left;
+        padding: 0;
+        vertical-align: top;
+    }
+    
+    ul { list-style: none; }
+
+    span.tags {
+        em {
+            display: inline-block;
+            background: #CCC;
+            padding: 0.0125em 0.5em;
+        }
+    }
+}
