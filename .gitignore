@@ -1,5 +1,6 @@
 build/
 wwwroot/index.html
+**/*.DotSettings.user
 
 .tools
 *.pdf
