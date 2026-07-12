@@ -5,4 +5,8 @@
     <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)build/obj/</BaseIntermediateOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</RepoRoot>
+  </PropertyGroup>
+
 </Project>
