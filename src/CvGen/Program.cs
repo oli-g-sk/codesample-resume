@@ -1,4 +1,5 @@
-﻿using RazorLight;
+﻿using System.Text.Json;
+using RazorLight;
 
 var appRoot = AppContext.BaseDirectory;
 
@@ -7,6 +8,17 @@ var outputRoot = Path.Combine(appRoot, "wwwroot");
 
 Directory.CreateDirectory(outputRoot);
 
+var itemsJson = await File.ReadAllTextAsync(
+    Path.Combine(appRoot, "Data", "items.json"));
+
+var items = JsonSerializer.Deserialize<List<string>>(itemsJson)
+            ?? [];
+
+var model = new
+{
+    Items = items
+};
+
 var engine = new RazorLightEngineBuilder()
     .UseFileSystemProject(templateRoot)
     .UseMemoryCachingProvider()
@@ -14,10 +26,8 @@ var engine = new RazorLightEngineBuilder()
 
 var html = await engine.CompileRenderAsync(
     "index.cshtml",
-    new { });
+    model);
 
-var indexPath = Path.Combine(outputRoot, "index.html");
-
-await File.WriteAllTextAsync(indexPath, html);
-
-Console.WriteLine($"Generated: {indexPath}");
+await File.WriteAllTextAsync(
+    Path.Combine(outputRoot, "index.html"),
+    html);
