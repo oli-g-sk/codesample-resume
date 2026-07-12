@@ -1,3 +1,6 @@
+build/
+wwwroot/index.html
+
 .tools
 *.pdf
 Decompiled_*
