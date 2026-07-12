@@ -1,7 +1,11 @@
 ﻿using RazorLight;
 
+var templatePath = Path.Combine(
+    AppContext.BaseDirectory,
+    "Templates");
+
 var engine = new RazorLightEngineBuilder()
-    .UseFileSystemProject("Templates")
+    .UseFileSystemProject(templatePath)
     .UseMemoryCachingProvider()
     .Build();
 
@@ -9,11 +13,10 @@ var html = await engine.CompileRenderAsync(
     "index.cshtml",
     new { });
 
-string path = Path.Combine("../docs");
-Directory.CreateDirectory("../docs");
+Directory.CreateDirectory("../../../wwwroot");
 
 await File.WriteAllTextAsync(
-    "../docs/index.html",
+    "../../../wwwroot/index.html",
     html);
 
-Console.WriteLine("Generated docs/index.html");
+Console.WriteLine("Generated wwwroot/index.html");
