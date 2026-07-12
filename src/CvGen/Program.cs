@@ -1,4 +1,6 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+using CvGen.Model;
 using RazorLight;
 
 var appRoot = AppContext.BaseDirectory;
@@ -11,13 +13,11 @@ Directory.CreateDirectory(outputRoot);
 var itemsJson = await File.ReadAllTextAsync(
     Path.Combine(appRoot, "Data", "items.json"));
 
-var items = JsonSerializer.Deserialize<List<string>>(itemsJson)
-            ?? [];
+var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+options.Converters.Add(new JsonStringEnumConverter());
+var items = JsonSerializer.Deserialize<List<Library>>(itemsJson, options) ?? [];
 
-var model = new
-{
-    Items = items
-};
+var model = new { Items = items };
 
 var engine = new RazorLightEngineBuilder()
     .UseFileSystemProject(templateRoot)
