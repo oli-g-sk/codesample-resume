@@ -1,5 +1,26 @@
 [
-  "Teacups.UI.Fastr",
-  "Teacups.Auth",
-  "Teacups.Storage"
+  {
+    "name": "Teacups.UI",
+    "repoUrl": "https://github.com/oli-g-sk/teacups-ui",
+    "packages": [
+      {
+        "nugetId": "Teacups.UI.Core",
+        "kind": "Core"
+      },
+      {
+        "nugetId": "Teacups.UI.WPF",
+        "kind": "WPF"
+      }
+    ]
+  },
+  {
+    "name": "Teacups.Templates",
+    "github": "https://github.com/oli-g-sk/boilerplate-dotnet",
+    "packages": [
+      {
+        "nugetId": "Teacups.Templates",
+        "kind": "Tools"
+      }
+    ]
+  }
 ]
