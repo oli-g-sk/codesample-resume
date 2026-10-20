@@ -17,8 +17,11 @@
       ]
     ] 
     Brno, *Czech Republic* \
+
+    *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
     *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-    *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852]
+    *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852] \
+    *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
   ],
   [
     #align(right)[
@@ -36,7 +39,7 @@
   columns: (5fr, 2fr), [
     = Professional Summary
 
-    Software engineer with *10+ years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
+    Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
     
     I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
     
@@ -82,10 +85,10 @@
 
     == Tools
     
-    - *Git*, Bitbucket
+    - *Git*, *Docker*
     - Azure DevOps, Jenkins
-    - *Docker*, GitHub Actions
     - Jira, Confluence
+    - *Codex*
   ],
 )
   ],
@@ -307,6 +310,35 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
     #block-role(
       "Web Developer",
       "Mar 2013 – Sep 2013",
+      "PHP, HTML, CSS"
+    )
+  ]
+)
+
+#grid(
+  columns: (5fr, 2fr), [
+    == Freelance work
+  ],
+  []
+)
+
+#grid(
+  columns: (5fr, 2fr), [
+
+    Maintenance or green-field development of various web applications or presentation websites (usually with a tailor-made lightweight CMS):
+
+=== Some of the projects
+
+- A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
+- Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
+- Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
+- Complete website for a small family tennis-tutoring business 
+- Website for local a non-profit helping women with breast cancer
+  ],
+  [
+    #block-role(
+      "Web Developer",
+      "2010 – 2013",
       "PHP, HTML, CSS"
     )
   ]

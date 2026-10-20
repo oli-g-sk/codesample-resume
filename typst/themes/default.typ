@@ -1,5 +1,5 @@
 #let cv-theme-def(body) = [
-  #set text(size: 9.5pt, font: "Arial")
+  #set text(size: 9.7pt, font: "Arial")
   #set list(indent: 0.5em, body-indent: 0.45em)
 
   #show heading.where(level: 1): it => block(inset: (bottom: 0.5em))[
