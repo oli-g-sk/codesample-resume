@@ -233,7 +233,9 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #grid(
   columns: (5fr, 2fr), [
-  Short-term Android development engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
+  Short-term *Android development* engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
+  
+  New experience in deploying a production-level product into multiple environments, countries and markets, each carrying its own specifics.
   ],
   [
     #block-role("Android Developer", "Oct 2019 – Dec 2019", "")
@@ -242,6 +244,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #grid(
   columns: (5fr, 2fr), [
+    \ \
     == Cleevio
   ],
   []
@@ -378,6 +381,49 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
   ],
   [
 
+  ]
+)
+
+#block-company(
+  "COMPANYY 1",
+  [
+  #block-project(
+      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Android Developer",
+      "2010 – 2013",
+      "Android, Java, Kotlin",
+      [
+        - sdcsdcsdc
+      ]
+    )
+  ]
+)
+
+#block-company(
+  "COMPANYY 2",
+  [
+    #block-project(
+      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Android Developer",
+      "2010 – 2013",
+      "Android, Java, Kotlin",
+      [
+        - sdcsdcsdc
+        - sdcsdcsdc
+        - sdcsdcsdc
+      ]
+    )
+    #block-project(
+      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Android Developer",
+      "2010 – 2013",
+      "Android, Java, Kotlin",
+      [
+        - sdcsdcsdc
+        - sdcsdcsdc
+        - sdcsdcsdc
+      ]
+    )
   ]
 )
 
