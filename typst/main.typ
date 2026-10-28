@@ -1,5 +1,9 @@
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
-#set page(paper: "a4", margin: (x: 0cm, y: 0cm))
+#set page(
+  paper: "a4",
+  margin: (x: 0cm, y: 0cm),
+  //fill: rgb(128, 128, 128, 128)
+)
 
 #import "themes/default.typ": cv-theme-def
 #import "themes/alternative.typ": cv-theme-alt
@@ -65,20 +69,20 @@
 
             - *C\# / .NET* / .NET Framework
             - *ASP.NET Core*, Blazor
-            - REST API, gRPC, Webhooks
-            - Entity Framework / EF Core
+            - *REST API*, gRPC, Webhooks
+            - Entity Framework / *EF Core*
             - *WPF*, Windows Forms
             - *Avalonia*, MAUI, Xamarin
             - *PostgreSQL*, MS SQL Server
-            - *Java*, Kotlin, Dart
             - *Android SDK*, Flutter
+            - *Java*, Kotlin, Dart
             - Spring Boot, JOOQ
             - HTML / CSS
             - JavaScript / TypeScript
             - Unity, Godot
           ],
           [
-            == Architecture & Practices
+            == Practices & Tools
 
             #show list.where(): it => block(inset: (top: 0em, bottom: -1.5em))[
               #it
@@ -89,15 +93,14 @@
             - Test-Driven Development (TDD)
             - Performance Optimization
             - Refactoring, Code Reviews
-            - UI / UX Design
-            - CI / CD
-
-            == Tools
-
-            - *Git*, *Docker*, Github Actions
+            - DI, IoC, Mediator Pattern
+            - *Git*, *Docker*
+            - CI / CD, Github Actions
             - Azure DevOps, Jenkins
             - Jira, Confluence
             - *Codex*, *Claude Code*
+            - Automation, no-code, n8n
+            - UI / UX Design
           ],
         )
       ],
@@ -109,7 +112,7 @@
   = Professional Experience
 
   #block-company(
-    "Bagira Systems",
+    h2("Bagira Systems"),
     [
       #block-project(
         text[
@@ -129,7 +132,7 @@
 
 #block-top-1()[
   #block-company(
-    "Chyron",
+    h2("Chyron"),
     [
       #block-project(
         text[
@@ -182,7 +185,7 @@
 
 #block-top-2()[
   #block-company(
-    "Turing Technology",
+    h2("Turing Technology"),
     [
     #block-project(
       text[
@@ -206,7 +209,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #block-top-1()[
   #block-company(
-    "EmbedIT",
+    h2("EmbedIT"),
     [
     #block-project(
       text[
@@ -224,7 +227,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #block-top-2()[
   #block-company(
-    "Cleevio",
+    h2("Cleevio"),
     [
     #block-project(
       text[
@@ -243,7 +246,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #block-top-1()[
   #block-company(
-    "YouWakeMe",
+    h2("YouWakeMe"),
     [
     #block-project(
       text[
@@ -264,7 +267,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #block-top-2()[
   #block-company(
-    "Masaryk University",
+    h2("Masaryk University"),
     [
     #block-project(
       text[Short term assignment during my studies of computer science at the university, and first experience with maintaining real-world, production-grade systems and a relatively high-traffic website.],
@@ -282,7 +285,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
 #block-top-1()[
   #block-company(
-    "Freelance work",
+    h2("Freelance Work"),
     [
     #block-project(
       text[
@@ -302,9 +305,31 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   )
 ]
 
-\ \ \ \
-
 #block-top-2()[
+  #block-company(
+    h2("Personal Projects & Open-Source"),
+    [
+    #block-project(
+      text[
+        Maintenance or green-field development of various *web applications* or presentation websites, usually with a *tailor-made lightweight CMS.*, including taking up *most of the UI design* work.],
+        "Web Design & Development",
+        "2010 – 2013",
+        "PHP, HTML, CSS, JavaScript / jQuery, OpenCart, WordPress",
+        [
+          - A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
+          - Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
+          - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
+          - Complete website for a small family tennis-tutoring business
+          - Website for local a non-profit helping women with breast cancer
+        ]
+      )
+    ]
+  )
+]
+
+\
+
+#block-top-1()[
 #grid(column-gutter: 1em,
   columns: (2fr, 2.5fr),
   [

@@ -3,6 +3,12 @@
   left: 1.5cm, right: 1.5cm
 )
 
+#let accent-color = rgb("#125b49")
+
+#let h2(title) = [
+  == #title #text(fill: accent-color)[█]
+]
+
 #let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.2pt) ]
 
 #let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
@@ -24,7 +30,7 @@
     top: 0.95cm, bottom: 0.95cm,
     left: 1.5cm, right: 1.5cm
   ),
-  fill: rgb("#224754"),
+  fill: accent-color,
   text(
     fill: rgb("#f0f0f0"),
     body,
