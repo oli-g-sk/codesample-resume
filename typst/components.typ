@@ -1,9 +1,9 @@
 #let page-margin = (
-  top: 0.55cm, bottom: 0.55cm,
+  top: 0.65cm, bottom: 0.75cm,
   left: 1.5cm, right: 1.5cm
 )
 
-#let section-rule = block(above: 2.75em, below: 2.75em)[ #line(length: 100%, stroke: 0.2pt) ]
+#let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.2pt) ]
 
 #let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
   #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
@@ -19,6 +19,7 @@
 ]
 
 #let block-header(body) = block(
+  below: 1em,
   inset: (
     top: 0.95cm, bottom: 0.95cm,
     left: 1.5cm, right: 1.5cm
