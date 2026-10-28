@@ -19,7 +19,7 @@
     #text()[
       == #name
       #projects
-    ],
+    ]
   ]
 )
 
@@ -73,7 +73,7 @@
         columns: 1fr,
         [*#role*],
         [#block(inset: (bottom: 0.5em))[
-          *#dates*,
+          *#dates*
         ]],
         section-rule,
         [#block(inset: (top: 0.5em))[
