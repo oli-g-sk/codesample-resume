@@ -2,25 +2,17 @@
 #set page(
   paper: "a4",
   margin: (x: 0cm, y: 0cm),
-  //fill: rgb(128, 128, 128, 128)
 )
 
-#import "themes/default.typ": cv-theme-def
-#import "themes/alternative.typ": cv-theme-alt
+#import "theme.typ": cv-theme
 #import "components.typ": *
 
-#show: cv-theme-def
+#show: cv-theme
 
 #block-header(
   grid(
     columns: (5fr, 3fr), [
-      #block(below: 2em, inset: (top: 0em))[
-        #text(size: 24pt, weight: "semibold")[Oliver Gašpar]
-
-        #block(above: 0.85em)[
-          #text(size: 14pt, style: "italic")[Senior Software Engineer]
-        ]
-      ]
+      #profile-title[Oliver Gašpar][Senior Software Engineer]
       Brno, *Czech Republic* \
 
       *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
@@ -29,15 +21,10 @@
       *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
     ],
     [
-      #align(right)[
-        #image(
-          "photo.jpg", width: 4.5cm)
-      ]
+      #profile-photo("photo.jpg")
     ]
   )
 )
-
-#set list(marker: list-marker)
 
 #block-top-2(
     grid(
@@ -62,45 +49,42 @@
           columns: (1fr, 1fr),
           gutter: 1.2cm,
           [
-            #show list.where(): it => block(inset:  (top: 0em, bottom: -1em))[
-              #it
-            ]
-            == Languages & Frameworks
+            #skills-column[
+              == Languages & Frameworks
 
-            - *C\# / .NET* / .NET Framework
-            - *ASP.NET Core*, Blazor
-            - *REST API*, gRPC, Webhooks
-            - Entity Framework / *EF Core*
-            - *WPF*, Windows Forms
-            - *Avalonia*, MAUI, Xamarin
-            - *PostgreSQL*, MS SQL Server
-            - *Android SDK*, Flutter
-            - *Java*, Kotlin, Dart
-            - Spring Boot, JOOQ
-            - HTML / CSS
-            - JavaScript / TypeScript
-            - Unity, Godot
+              - *C\# / .NET* / .NET Framework
+              - *ASP.NET Core*, Blazor
+              - *REST API*, gRPC, Webhooks
+              - Entity Framework / *EF Core*
+              - *WPF*, Windows Forms
+              - *Avalonia*, MAUI, Xamarin
+              - *PostgreSQL*, MS SQL Server
+              - *Android SDK*, Flutter
+              - *Java*, Kotlin, Dart
+              - Spring Boot, JOOQ
+              - HTML / CSS
+              - JavaScript / TypeScript
+              - Unity, Godot
+            ]
           ],
           [
-            == Practices & Tools
+            #skills-column(practices: true)[
+              == Practices & Tools
 
-            #show list.where(): it => block(inset: (top: 0em, bottom: -1.5em))[
-              #it
+              - Model-View-ViewModel (*MVVM*)
+              - *Agentic Engineering* (SDD)
+              - Test-Driven Development (TDD)
+              - Performance Optimization
+              - Refactoring, Code Reviews
+              - DI, IoC, Mediator Pattern
+              - *Git*, *Docker*
+              - CI / CD, Github Actions
+              - Azure DevOps, Jenkins
+              - Jira, Confluence
+              - *Codex*, *Claude Code*
+              - Automation, no-code, n8n
+              - UI / UX Design
             ]
-
-            - Model-View-ViewModel (*MVVM*)
-            - *Agentic Engineering* (SDD)
-            - Test-Driven Development (TDD)
-            - Performance Optimization
-            - Refactoring, Code Reviews
-            - DI, IoC, Mediator Pattern
-            - *Git*, *Docker*
-            - CI / CD, Github Actions
-            - Azure DevOps, Jenkins
-            - Jira, Confluence
-            - *Codex*, *Claude Code*
-            - Automation, no-code, n8n
-            - UI / UX Design
           ],
         )
       ],
@@ -334,12 +318,8 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   columns: (2fr, 2.5fr),
   [
     = Languages
-    #table(
+    #info-table(
       columns: (1fr, 1.5fr),
-      inset: 0pt,
-      gutter: 1em,
-      column-gutter: 1em,
-      stroke: 0pt,
       [*Language*], [*Level*],
       [English], [Fluent],
       [Slovak], [Native],
@@ -349,12 +329,8 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   ],
   [
     = Education
-    #table(
+    #info-table(
       columns: (1fr),
-      inset: 0pt,
-      gutter: 1em,
-      column-gutter: 1em,
-      stroke: 0pt,
       [*Applied Informatics*],
       [Masaryk University, Brno],
       [2009–2014],

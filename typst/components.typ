@@ -1,19 +1,10 @@
-#let page-margin = (
-  top: 0.65cm, bottom: 0.75cm,
-  left: 1.5cm, right: 1.5cm
-)
-
-#let accent-color = rgb("#125b49")
+#import "theme.typ": page-margin, accent-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
 ]
 
 #let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.2pt) ]
-
-#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
-  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
-]
 
 #let tip(body) = block(
   fill: rgb("#eef6ff"),
@@ -122,4 +113,34 @@
       )
     ]
   ]
+)
+
+#let profile-title(name, role) = block(below: 2em, inset: (top: 0em))[
+  #text(size: 24pt, weight: "semibold", name)
+
+  #block(above: 0.85em)[
+    #text(size: 14pt, style: "italic", role)
+  ]
+]
+
+#let profile-photo(path) = align(right)[
+  #image(path, width: 4.5cm)
+]
+
+#let skills-column(body, practices: false) = [
+  #show list.where(): it => block(inset: (
+    top: 0em,
+    bottom: if practices { -1.5em } else { -1em },
+  ))[
+    #it
+  ]
+  #body
+]
+
+#let info-table(..args) = table(
+  inset: 0pt,
+  gutter: 1em,
+  column-gutter: 1em,
+  stroke: 0pt,
+  ..args,
 )

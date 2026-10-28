@@ -1,4 +1,15 @@
-#let cv-theme-def(body) = [
+#let page-margin = (
+  top: 0.65cm, bottom: 0.75cm,
+  left: 1.5cm, right: 1.5cm
+)
+
+#let accent-color = rgb("#125b49")
+
+#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
+  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
+]
+
+#let cv-theme(body) = [
   #set text(size: 9.7pt, font: "Arial")
   #set list(indent: 0.5em, body-indent: 0.45em)
 
@@ -27,7 +38,7 @@
   #set par(justify: false)
   #set list(body-indent: 0.75em)
 
-  #set list(marker: "")
+  #set list(marker: list-marker)
 
   #body
 ]
