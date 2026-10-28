@@ -112,7 +112,6 @@
     "COMPANYY 1",
     [
     #block-project(
-        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "Android Developer",
         "2010 – 2013",
         "Android, Java, Kotlin",
