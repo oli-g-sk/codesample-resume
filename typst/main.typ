@@ -63,10 +63,10 @@
             ]
             == Languages & Frameworks
 
-            - *C\# / .NET*
+            - *C\# / .NET* / .NET Framework
             - *ASP.NET Core*, Blazor
             - REST API, gRPC, Webhooks
-            - Entity Framework / EFCore
+            - Entity Framework / EF Core
             - *WPF*, Windows Forms
             - *Avalonia*, MAUI, Xamarin
             - *PostgreSQL*, MS SQL Server
@@ -105,13 +105,13 @@
     )
 )
 
-#block-top-2()[
-  = Professional Experience
-
+#block-top-1()[
   #block-company(
     "COMPANYY 1",
     [
     #block-project(
+      text[
+        We worked on *this and that*, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.],
         "Android Developer",
         "2010 – 2013",
         "Android, Java, Kotlin",
@@ -121,33 +121,80 @@
       )
     ]
   )
+]
+
+#block-top-2()[
+  = Professional Experience
 
   #block-company(
-    "COMPANYY 2",
+    "Bagira Systems",
     [
       #block-project(
-        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Android Developer",
-        "2010 – 2013",
-        "Android, Java, Kotlin",
+        text[
+          Worked on *eliminating third-party UI dependencies* (DevExpress) in favor of an in-house UI framework.
+        ],
+        ".NET Developer",
+        "Nov 2025 – Feb 2026",
+        "C# / .NET, WPF",
         [
-          - sdcsdcsdc
-          - sdcsdcsdc
-          - sdcsdcsdc
-        ]
-      )
-      #block-project(
-        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Android Developer",
-        "2010 – 2013",
-        "Android, Java, Kotlin",
-        [
-          - sdcsdcsdc
-          - sdcsdcsdc
-          - sdcsdcsdc
+          - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
+          - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
         ]
       )
     ]
+  )
+]
+
+#block-top-1()[
+  #block-company(
+    "Chyron",
+    [
+      #block-project(
+        text[
+          Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were critical.],
+          ".NET Developer",
+          "Sep 2022 – Oct 2025",
+          "C#/.NET, WPF, WinForms, ASP.NET Core, gRPC, Jenkins",
+          [
+            - Delivered *UX and usability improvements* ahead of a major sports event, earning *direct recognition from NBC*.
+            - *Refactored operation-critical components*, eliminating a long-standing defect responsible for recurring customer issues.
+            - *Improved stability and maintainability* of a *complex hybrid WPF/Windows Forms* application through bug fixes, refactoring, and modernization efforts.
+            - Developed new features and maintained production-critical functionality.
+            - Contributed to the ongoing migration from Windows Forms to WPF.
+            - Created *internal tools* that improved productivity for developers and SQA.
+          ],
+        )
+
+        #section-rule
+
+        #block-project(
+          text[
+            Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.],
+            ".NET Developer",
+            "Oct 2021 – Sep 2022",
+            "C#/.NET, ASP.NET Core, gRPC, Mapster, xUnit",
+            [
+              - Developed backend services using *ASP.NET Core*.
+              - Implemented *new API endpoints* and exposed them through *gRPC*.
+              - *Integrated a major audio-mixing feature* from the previous project.
+              - Maintained strong focus on code quality and *test-driven development*.
+            ],
+          )
+
+          #section-rule
+
+          #block-project(
+            text[
+              Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.],
+              ".NET Developer",
+              "Oct 2020 – Sep 2021",
+              "C#/.NET, WPF",
+              [
+                - *Was responsible for* major parts of the *new UI and features*.
+                - Contributed to *engine-level features* and business logic.
+              ],
+            )
+    ],
   )
 ]
 
@@ -156,101 +203,6 @@
 #section-rule
 #section-rule
 #section-rule
-
-#grid(
-  columns: (5fr, 2fr), [
-    == Bagira Systems
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-      Worked on *eliminating third-party UI dependencies* (DevExpress) in favor of an in-house UI framework.
-
-      === Key achievements
-
-      - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
-      - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
-  ],
-  [
-    #block-role(
-      ".NET Developer",
-      "Nov 2025 – Feb 2026",
-      "C# / .NET, WPF"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-    == Chyron
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-
-Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were critical.
-
-=== Key achievements
-
-- Delivered *UX and usability improvements* ahead of a major sports event, earning *direct recognition from NBC*.
-- *Refactored operation-critical components*, eliminating a long-standing defect responsible for recurring customer issues.
-- *Improved stability and maintainability* of a *complex hybrid WPF/Windows Forms* application through bug fixes, refactoring, and modernization efforts.
-- Developed new features and maintained production-critical functionality.
-- Contributed to the ongoing migration from Windows Forms to WPF.
-- Created *internal tools* that improved productivity for developers and SQA.
-  ],
-  [
-    #block-role(
-      ".NET Developer",
-      "Sep 2022 – Oct 2025",
-      "C#/.NET, WPF, WinForms,
-      ASP.NET Core, gRPC, Jenkins"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.
-
-=== Key achievements
-
-- Developed backend services using *ASP.NET Core*.
-- Implemented *new API endpoints* and exposed them through *gRPC*.
-- *Integrated a major audio-mixing feature* from the previous project.
-- Maintained strong focus on code quality and *test-driven development*.
-  ],
-  [
-    #block-role(
-      ".NET Developer",
-      "Oct 2021 – Sep 2022",
-      "C#/.NET, ASP.NET Core,
-      gRPC, Mapster, xUnit"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.
-
-=== Key achievements
-
-- *Was responsible for* major parts of the *new UI and features*.
-- Contributed to *engine-level features* and business logic.
-  ],
-  [
-    #block-role(
-      ".NET Developer",
-      "Oct 2020 – Sep 2021",
-      "C# / .NET, WPF"
-    )
-  ]
-)
 
 #grid(
   columns: (5fr, 2fr), [
