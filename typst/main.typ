@@ -11,11 +11,11 @@
   columns: (5fr, 3fr), [
     #block(below: 2em, inset: (top: 3em))[
       #text(size: 22pt, weight: "semibold")[Oliver Gašpar]
-      
+
       #block(above: 0.85em)[
         #text(size: 14pt, style: "italic")[Senior Software Engineer]
       ]
-    ] 
+    ]
     Brno, *Czech Republic* \
 
     *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
@@ -238,7 +238,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 #grid(
   columns: (5fr, 2fr), [
   Short-term *Android development* engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
-  
+
   New experience in deploying a production-level product into multiple environments, countries and markets, each carrying its own specifics.
   ],
   [
@@ -296,7 +296,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
       "Android Developer",
       "Apr 2015 – Mar 2018",
       "C# / .NET, Xamarin, Android"
-    )   
+    )
   ]
 )
 
@@ -339,7 +339,7 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
 - A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
 - Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
 - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
-- Complete website for a small family tennis-tutoring business 
+- Complete website for a small family tennis-tutoring business
 - Website for local a non-profit helping women with breast cancer
   ],
   [
