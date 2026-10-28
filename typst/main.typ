@@ -302,13 +302,9 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   )
 ]
 
-#section-rule
-#section-rule
-#section-rule
-#section-rule
-#section-rule
-#section-rule
+\ \ \ \
 
+#block-top-2()[
 #grid(column-gutter: 1em,
   columns: (2fr, 2.5fr),
   [
@@ -343,6 +339,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 
   ]
 )
+]
 
 
 

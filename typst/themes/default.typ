@@ -8,13 +8,13 @@
     ]
   ]
 
-  #show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
+  #show heading.where(level: 2): it => block(inset: (top: 0.25em, bottom: 0.6em), sticky: true)[
     #text()[
       #it.body
     ]
   ]
 
-  #show heading.where(level: 3): it => block(inset: (top: 0.25em, bottom: 0.2em), sticky: true)[
+  #show heading.where(level: 3): it => block(inset: (top: 0em, bottom: 0.2em), sticky: true)[
     #text()[
       #it.body
     ]
