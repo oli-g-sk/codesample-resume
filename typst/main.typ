@@ -1,5 +1,5 @@
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
-#set page(paper: "a4", margin: (x: 1.5cm, y: 1.35cm))
+#set page(paper: "a4", margin: (x: 0cm, y: 0cm))
 
 #import "themes/default.typ": cv-theme-def
 #import "themes/alternative.typ": cv-theme-alt
@@ -7,101 +7,156 @@
 
 #show: cv-theme-def
 
-#grid(
-  columns: (5fr, 3fr), [
-    #block(below: 2em, inset: (top: 3em))[
-      #text(size: 22pt, weight: "semibold")[Oliver Gašpar]
+#block-header(
+  grid(
+    columns: (5fr, 3fr), [
+      #block(below: 2em, inset: (top: 0em))[
+        #text(size: 24pt, weight: "semibold")[Oliver Gašpar]
 
-      #block(above: 0.85em)[
-        #text(size: 14pt, style: "italic")[Senior Software Engineer]
+        #block(above: 0.85em)[
+          #text(size: 14pt, style: "italic")[Senior Software Engineer]
+        ]
+      ]
+      Brno, *Czech Republic* \
+
+      *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
+      *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
+      *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852] \
+      *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
+    ],
+    [
+      #align(right)[
+        #image(
+          "photo.jpg", width: 4.5cm)
       ]
     ]
-    Brno, *Czech Republic* \
-
-    *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
-    *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-    *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852] \
-    *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
-  ],
-  [
-    #align(right)[
-      #image(
-        "photo.jpg", width: 5cm)
-    ]
-  ]
+  )
 )
-
-#section-rule
 
 #set list(marker: list-marker)
 
-#grid(
-  columns: (5fr, 2fr), [
-    = Professional Summary
+#block-top-2(
+    grid(
+      columns: (5fr, 2fr), [
+        = Professional Summary
 
-    Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
+        Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
 
-    I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
+        I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
 
-    I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is _intuitive for users_ and _maintainable for engineering_ teams.
+        I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is _intuitive for users_ and _maintainable for engineering_ teams.
 
-    These days, I'm upgrading my workflow by utilizing *cloud-native development practices* and super-charging it with *AI-assisted development _where appropriate_*.
-
-    = Technologies
-
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 1.2cm,
-  [
-    #show list.where(): it => block(inset:  (top: 0em, bottom: -1em))[
-      #it
-    ]
-    == Languages & Frameworks
-
-    - *C\# / .NET*
-    - *ASP.NET Core*, Blazor
-    - REST API, gRPC, Webhooks
-    - Entity Framework / EFCore
-    - *WPF*, Windows Forms
-    - *Avalonia*, MAUI, Xamarin
-    - *PostgreSQL*, MS SQL Server
-    - *Java*, Kotlin, Dart
-    - *Android SDK*, Flutter
-    - Spring Boot, JOOQ
-    - HTML / CSS
-    - JavaScript / TypeScript
-    - Unity, Godot
-  ],
-  [
-    == Architecture & Practices
-
-    #show list.where(): it => block(inset: (top: 0em, bottom: -1.5em))[
-      #it
-    ]
-
-    - Model-View-ViewModel (*MVVM*)
-    - *Agentic Engineering* (SDD)
-    - Test-Driven Development (TDD)
-    - Performance Optimization
-    - Refactoring, Code Reviews
-    - UI / UX Design
-    - CI / CD
-
-    == Tools
-
-    - *Git*, *Docker*, Github Actions
-    - Azure DevOps, Jenkins
-    - Jira, Confluence
-    - *Codex*, *Claude Code*
-  ],
+        These days, I'm upgrading my workflow by utilizing *cloud-native development practices* and super-charging it with *AI-assisted development _where appropriate_*.      ],
+      []
+    )
 )
-  ],
-  []
+
+#block-top-1(
+    grid(
+      columns: (5fr, 2fr), [
+        #grid(
+          columns: (1fr, 1fr),
+          gutter: 1.2cm,
+          [
+            #show list.where(): it => block(inset:  (top: 0em, bottom: -1em))[
+              #it
+            ]
+            == Languages & Frameworks
+
+            - *C\# / .NET*
+            - *ASP.NET Core*, Blazor
+            - REST API, gRPC, Webhooks
+            - Entity Framework / EFCore
+            - *WPF*, Windows Forms
+            - *Avalonia*, MAUI, Xamarin
+            - *PostgreSQL*, MS SQL Server
+            - *Java*, Kotlin, Dart
+            - *Android SDK*, Flutter
+            - Spring Boot, JOOQ
+            - HTML / CSS
+            - JavaScript / TypeScript
+            - Unity, Godot
+          ],
+          [
+            == Architecture & Practices
+
+            #show list.where(): it => block(inset: (top: 0em, bottom: -1.5em))[
+              #it
+            ]
+
+            - Model-View-ViewModel (*MVVM*)
+            - *Agentic Engineering* (SDD)
+            - Test-Driven Development (TDD)
+            - Performance Optimization
+            - Refactoring, Code Reviews
+            - UI / UX Design
+            - CI / CD
+
+            == Tools
+
+            - *Git*, *Docker*, Github Actions
+            - Azure DevOps, Jenkins
+            - Jira, Confluence
+            - *Codex*, *Claude Code*
+          ],
+        )
+      ],
+      []
+    )
 )
+
+#block-top-2()[
+  = Professional Experience
+
+  #block-company(
+    "COMPANYY 1",
+    [
+    #block-project(
+        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Android Developer",
+        "2010 – 2013",
+        "Android, Java, Kotlin",
+        [
+          - sdcsdcsdc
+        ]
+      )
+    ]
+  )
+
+  #block-company(
+    "COMPANYY 2",
+    [
+      #block-project(
+        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Android Developer",
+        "2010 – 2013",
+        "Android, Java, Kotlin",
+        [
+          - sdcsdcsdc
+          - sdcsdcsdc
+          - sdcsdcsdc
+        ]
+      )
+      #block-project(
+        "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Android Developer",
+        "2010 – 2013",
+        "Android, Java, Kotlin",
+        [
+          - sdcsdcsdc
+          - sdcsdcsdc
+          - sdcsdcsdc
+        ]
+      )
+    ]
+  )
+]
 
 #section-rule
-
-= Professional Experience
+#section-rule
+#section-rule
+#section-rule
+#section-rule
 
 #grid(
   columns: (5fr, 2fr), [
@@ -385,49 +440,6 @@ Developed a *cross-platform mobile app* combining an alarm clock with social med
   ],
   [
 
-  ]
-)
-
-#block-company(
-  "COMPANYY 1",
-  [
-  #block-project(
-      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Android Developer",
-      "2010 – 2013",
-      "Android, Java, Kotlin",
-      [
-        - sdcsdcsdc
-      ]
-    )
-  ]
-)
-
-#block-company(
-  "COMPANYY 2",
-  [
-    #block-project(
-      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Android Developer",
-      "2010 – 2013",
-      "Android, Java, Kotlin",
-      [
-        - sdcsdcsdc
-        - sdcsdcsdc
-        - sdcsdcsdc
-      ]
-    )
-    #block-project(
-      "We worked on this and that, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Android Developer",
-      "2010 – 2013",
-      "Android, Java, Kotlin",
-      [
-        - sdcsdcsdc
-        - sdcsdcsdc
-        - sdcsdcsdc
-      ]
-    )
   ]
 )
 

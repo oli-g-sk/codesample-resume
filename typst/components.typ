@@ -1,3 +1,8 @@
+#let page-margin = (
+  top: 0.55cm, bottom: 0.55cm,
+  left: 1.5cm, right: 1.5cm
+)
+
 #let section-rule = block(above: 2.75em, below: 2.75em)[ #line(length: 100%, stroke: 0.2pt) ]
 
 #let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
@@ -13,8 +18,32 @@
   *Tip:* #body
 ]
 
+#let block-header(body) = block(
+  inset: (
+    top: 0.95cm, bottom: 0.95cm,
+    left: 1.5cm, right: 1.5cm
+  ),
+  fill: rgb("#224754"),
+  text(
+    fill: rgb("#f0f0f0"),
+    body,
+  ),
+)
+
+#let block-top-1(body) = block(
+  inset: page-margin,
+  fill: rgb(240, 240, 240),
+  body,
+)
+
+#let block-top-2(body) = block(
+  inset: page-margin,
+  fill: rgb(255, 255, 255),
+  body,
+)
+
 #let block-company(name, projects) = block(
-  inset: (top: 0.5em, bottom: 0.5em, left: 0em, right: 0.75em),
+  inset: (top: 0.5em, bottom: 0.5em, left: 0em, right: 0em),
   [
     #text()[
       == #name
