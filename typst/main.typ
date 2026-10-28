@@ -105,24 +105,6 @@
     )
 )
 
-#block-top-1()[
-  #block-company(
-    "COMPANYY 1",
-    [
-    #block-project(
-      text[
-        We worked on *this and that*, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.],
-        "Android Developer",
-        "2010 – 2013",
-        "Android, Java, Kotlin",
-        [
-          - sdcsdcsdc
-        ]
-      )
-    ]
-  )
-]
-
 #block-top-2()[
   = Professional Experience
 
@@ -154,7 +136,7 @@
           Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were critical.],
           ".NET Developer",
           "Sep 2022 – Oct 2025",
-          "C#/.NET, WPF, WinForms, ASP.NET Core, gRPC, Jenkins",
+          "C# / .NET, WPF, WinForms, ASP.NET Core, gRPC, Jenkins",
           [
             - Delivered *UX and usability improvements* ahead of a major sports event, earning *direct recognition from NBC*.
             - *Refactored operation-critical components*, eliminating a long-standing defect responsible for recurring customer issues.
@@ -172,7 +154,7 @@
             Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.],
             ".NET Developer",
             "Oct 2021 – Sep 2022",
-            "C#/.NET, ASP.NET Core, gRPC, Mapster, xUnit",
+            "C# / .NET, ASP.NET Core, gRPC, Mapster, xUnit",
             [
               - Developed backend services using *ASP.NET Core*.
               - Implemented *new API endpoints* and exposed them through *gRPC*.
@@ -188,7 +170,7 @@
               Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.],
               ".NET Developer",
               "Oct 2020 – Sep 2021",
-              "C#/.NET, WPF",
+              "C# / .NET, WPF",
               [
                 - *Was responsible for* major parts of the *new UI and features*.
                 - Contributed to *engine-level features* and business logic.
@@ -198,165 +180,133 @@
   )
 ]
 
-#section-rule
-#section-rule
-#section-rule
-#section-rule
-#section-rule
-
-#grid(
-  columns: (5fr, 2fr), [
-    == Turing Technology
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Worked on multiple short- and long-term *projects across platforms and stacks* in a fast-growing, fintech-focused startup.
-
-=== Key achievements
-
+#block-top-2()[
+  #block-company(
+    "Turing Technology",
+    [
+    #block-project(
+      text[
+Worked on multiple short- and long-term *projects across platforms and stacks* in a fast-growing, fintech-focused startup.],
+        "Software Developer",
+        "Apr 2018 – Sep 2020",
+        "C# / .NET, WPF,
+        Android SDK, Java, Flutter",
+        [
 - Independently developed a *native Android* application in Java *from scratch*.
 - Delivered a *polished UI* ready for backend integration.
 - Joined development of a Forex trading *desktop platform*.
 - Led major parts of *WPF UI* implementation and performance optimization.
 - Contributed to *architecture decisions* and engineering best practices.
 - Experimented with *Flutter* as part of internal research efforts.
-  ],
-  [
-    #block-role(
-      "Software Developer",
-      "Apr 2018 – Sep 2020",
-      "C# / .NET, WPF,
-      Android, Java, Flutter"
-    )
-  ]
-)
+        ]
+      )
+    ]
+  )
+]
 
-#grid(
-  columns: (5fr, 2fr), [
-    == EmbedIT
-  ],
-  []
-)
+#block-top-1()[
+  #block-company(
+    "EmbedIT",
+    [
+    #block-project(
+      text[
+          Short-term *Android development* engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
 
-#grid(
-  columns: (5fr, 2fr), [
-  Short-term *Android development* engagement involving updating and maintaining an internal native application developed in Java and Kotlin.
+  New experience in deploying a production-level product into multiple environments, countries and markets, each carrying its own specifics.],
+        "Android Developer",
+        "Oct 2019 – Dec 2019",
+        "Android SDK, Java",
+        []
+      )
+    ]
+  )
+]
 
-  New experience in deploying a production-level product into multiple environments, countries and markets, each carrying its own specifics.
-  ],
-  [
-    #block-role("Android Developer", "Oct 2019 – Dec 2019", "")
-  ]
-)
+#block-top-2()[
+  #block-company(
+    "Cleevio",
+    [
+    #block-project(
+      text[
+        Worked on *multiple Android projects* for a well-recognized development house responsible for award-winning apps like Spendee.],
+        "Android Developer",
+        "Feb 2017 – Aug 2017",
+        "Android SDK, Java",
+        [
+          - *Integrated video advertising* into the mobile application of a *major Czech radio* station.
+          - Worked on a new application combining concepts from recruitment platforms and social-media-style stories in a small team of three.
+        ]
+      )
+    ]
+  )
+]
 
-#grid(
-  columns: (5fr, 2fr), [
-    \ \
-    == Cleevio
-  ],
-  []
-)
+#block-top-1()[
+  #block-company(
+    "YouWakeMe",
+    [
+    #block-project(
+      text[
+        Developed a *cross-platform mobile app* combining an alarm clock with social media features as part of a *two-person team*.],
+        "Android Developer",
+        "Apr 2015 – Mar 2018",
+        "C# / .NET, Android SDK, Xamarin",
+        [
+          - *Owned Android implementation* and most platform-specific integrations.
+          - Collaborated on UI design, adapting shared designs to Android while *advocating for native Android user experience*.
+          - Helped shape a unique concept combining an alarm clock with social networking features.
+          - The released app *won both main awards at Czech AppParade 25*.
+        ]
+      )
+    ]
+  )
+]
 
-#grid(
-  columns: (5fr, 2fr), [
+#block-top-2()[
+  #block-company(
+    "Masaryk University",
+    [
+    #block-project(
+      text[Short term assignment during my studies of computer science at the university, and first experience with maintaining real-world, production-grade systems and a relatively high-traffic website.],
+        "Web Developer",
+        "Mar 2013 – Sep 2013",
+        "PHP, HTML, CSS",
+        [
+          - Developed and maintained public-facing websites for the Faculty of Law.
+          - Developed and *maintained internal systems* used by employees and external collaborators.
+        ]
+      )
+    ]
+  )
+]
 
-Worked on *multiple Android projects* for a well-recognized development house responsible for award-winning apps like Spendee.
+#block-top-1()[
+  #block-company(
+    "Freelance work",
+    [
+    #block-project(
+      text[
+        Maintenance or green-field development of various *web applications* or presentation websites, usually with a *tailor-made lightweight CMS.*, including taking up *most of the UI design* work.],
+        "Web Design & Development",
+        "2010 – 2013",
+        "PHP, HTML, CSS, JavaScript / jQuery, OpenCart, WordPress",
+        [
+          - A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
+          - Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
+          - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
+          - Complete website for a small family tennis-tutoring business
+          - Website for local a non-profit helping women with breast cancer
+        ]
+      )
+    ]
+  )
+]
 
-=== Key achievements
-
-- *Integrated video advertising* into the mobile application of a *major Czech radio* station.
-- Worked on a new application combining concepts from recruitment platforms and social-media-style stories in a small team of three.
-  ],
-  [
-    #block-role(
-      "Android Developer",
-      "Feb 2017 – Aug 2017",
-      "Android, Java, Kotlin"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-    == YouWakeMe
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-Developed a *cross-platform mobile app* combining an alarm clock with social media features as part of a *two-person team*.
-
-=== Key achievements
-
-- *Owned Android implementation* and most platform-specific integrations.
-- Collaborated on UI design, adapting shared designs to Android while *advocating for native Android user experience*.
-- Helped shape a unique concept combining an alarm clock with social networking features.
-- The released app *won both main awards at Czech AppParade 25*.
-  ],
-  [
-    #block-role(
-      "Android Developer",
-      "Apr 2015 – Mar 2018",
-      "C# / .NET, Xamarin, Android"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-    == Masaryk University
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-
-- Maintained and updated public-facing websites for the Faculty of Law.
-- Developed and *maintained internal systems* used by employees and external collaborators.
-  ],
-  [
-    #block-role(
-      "Web Developer",
-      "Mar 2013 – Sep 2013",
-      "PHP, HTML, CSS"
-    )
-  ]
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-    == Freelance work
-  ],
-  []
-)
-
-#grid(
-  columns: (5fr, 2fr), [
-
-    Maintenance or green-field development of various web applications or presentation websites (usually with a tailor-made lightweight CMS):
-
-=== Some of the projects
-
-- A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
-- Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
-- Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
-- Complete website for a small family tennis-tutoring business
-- Website for local a non-profit helping women with breast cancer
-  ],
-  [
-    #block-role(
-      "Web Developer",
-      "2010 – 2013",
-      "PHP, HTML, CSS"
-    )
-  ]
-)
-
+#section-rule
+#section-rule
+#section-rule
+#section-rule
+#section-rule
 #section-rule
 
 #grid(column-gutter: 1em,

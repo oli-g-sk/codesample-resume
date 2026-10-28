@@ -31,12 +31,16 @@
 )
 
 #let block-top-1(body) = block(
+  above: 0pt,
+  below: 0pt,
   inset: page-margin,
   fill: rgb(240, 240, 240),
   body,
 )
 
 #let block-top-2(body) = block(
+  above: 0pt,
+  below: 0pt,
   inset: page-margin,
   fill: rgb(255, 255, 255),
   body,
@@ -59,8 +63,8 @@
       #intro
     ],
     \
-    === Key achievements
-    #text()[
+    #if achievements != [] [
+      === Key achievements
       #achievements
     ]
   ],
