@@ -40,10 +40,12 @@
     = Professional Summary
 
     Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
-    
+
     I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
-    
-    I also enjoy modernizing legacy systems, reducing technical debt, improving developer workflows, and delivering software that is *intuitive for users* and *maintainable for engineering* teams.
+
+    I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is _intuitive for users_ and _maintainable for engineering_ teams.
+
+    These days, I'm upgrading my workflow by utilizing *cloud-native development practices* and super-charging it with *AI-assisted development _where appropriate_*.
 
     = Technologies
 
@@ -57,17 +59,18 @@
     == Languages & Frameworks
 
     - *C\# / .NET*
-    - ASP.NET Core
-    - REST API, gRPC
+    - *ASP.NET Core*, Blazor
+    - REST API, gRPC, Webhooks
     - Entity Framework / EFCore
     - *WPF*, Windows Forms
-    - *PostgreSQL*, SQL Server
-    - *Java*, Kotlin
-    - *Android SDK*
+    - *Avalonia*, MAUI, Xamarin
+    - *PostgreSQL*, MS SQL Server
+    - *Java*, Kotlin, Dart
+    - *Android SDK*, Flutter
     - Spring Boot, JOOQ
-    - Xamarin, Blazor
-    - *Avalonia*, Flutter
     - HTML / CSS
+    - JavaScript / TypeScript
+    - Unity, Godot
   ],
   [
     == Architecture & Practices
@@ -76,7 +79,8 @@
       #it
     ]
 
-    - Model-View-ViewModel (MVVM)
+    - Model-View-ViewModel (*MVVM*)
+    - *Agentic Engineering* (SDD)
     - Test-Driven Development (TDD)
     - Performance Optimization
     - Refactoring, Code Reviews
@@ -84,11 +88,11 @@
     - CI / CD
 
     == Tools
-    
-    - *Git*, *Docker*
+
+    - *Git*, *Docker*, Github Actions
     - Azure DevOps, Jenkins
     - Jira, Confluence
-    - *Codex*
+    - *Codex*, *Claude Code*
   ],
 )
   ],
@@ -109,9 +113,9 @@
 #grid(
   columns: (5fr, 2fr), [
       Worked on *eliminating third-party UI dependencies* (DevExpress) in favor of an in-house UI framework.
-        
+
       === Key achievements
-      
+
       - Integrated key parts of a *custom WPF framework* into a mission-critical application under a tight deadline.
       - Added meaningful improvements to several custom widgets to support their *long-term usability* and maintainability.
   ],
