@@ -1,4 +1,4 @@
-#import "theme.typ": page-margin, accent-color
+#import "theme.typ": section-padding, page-top-padding, accent-color, gray-section-color, white-section-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
@@ -16,6 +16,8 @@
 ]
 
 #let block-header(body) = block(
+  // Extend just the teal background into the page's top margin.
+  outset: (top: page-top-padding),
   below: 1em,
   inset: (
     top: 0.95cm, bottom: 0.95cm,
@@ -28,21 +30,22 @@
   ),
 )
 
-#let block-top-1(body) = block(
+// Shared layout for the two section colors. The marker has no visible content;
+// the page background uses it to continue the last section's color to the bottom.
+#let section-block(fill, body) = block(
+  width: 100%,
   above: 0pt,
   below: 0pt,
-  inset: page-margin,
-  fill: rgb(240, 240, 240),
-  body,
+  inset: section-padding,
+  fill: fill,
+  [
+    #metadata(fill) <section-background>
+    #body
+  ],
 )
 
-#let block-top-2(body) = block(
-  above: 0pt,
-  below: 0pt,
-  inset: page-margin,
-  fill: rgb(255, 255, 255),
-  body,
-)
+#let block-top-1(body) = section-block(gray-section-color, body)
+#let block-top-2(body) = section-block(white-section-color, body)
 
 #let block-company(name, projects) = block(
   inset: (top: 0.5em, bottom: 0.5em, left: 0em, right: 0em),

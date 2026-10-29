@@ -1,7 +1,6 @@
 #set document(title: "Oliver Gašpar CV", author: "Oliver Gašpar")
 #set page(
   paper: "a4",
-  margin: (x: 0cm, y: 0cm),
 )
 
 #import "theme.typ": cv-theme
