@@ -4,7 +4,7 @@
   == #title #text(fill: accent-color)[█]
 ]
 
-#let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.2pt) ]
+#let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.1pt) ]
 
 #let tip(body) = block(
   fill: rgb("#eef6ff"),
