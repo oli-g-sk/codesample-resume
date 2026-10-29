@@ -48,7 +48,7 @@
   inset: (top: 0.5em, bottom: 0.5em, left: 0em, right: 0em),
   [
     #text()[
-      == #name
+      #name
       #projects
     ]
   ]

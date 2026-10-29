@@ -19,7 +19,13 @@
     ]
   ]
 
-  #show heading.where(level: 2): it => block(inset: (top: 0.1em, bottom: 0.8em), sticky: true)[
+  // Keep heading spacing explicit; inset controls the padding around the text.
+  #show heading.where(level: 2): it => block(
+    above: 0pt,
+    below: 0pt,
+    inset: (top: 0.1em, bottom: 0.8em),
+    sticky: true,
+  )[
     #text()[
       #it.body
     ]
