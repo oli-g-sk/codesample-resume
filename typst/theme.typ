@@ -13,6 +13,8 @@
 // Negative values move both skills lists left; 0em restores their usual position.
 #let skills-list-left-margin = -1.8em
 #let gray-section-color = rgb(240, 240, 240)
+// 0.75pt is approximately 1 CSS pixel; darken by 50% for the section borders.
+#let gray-section-border = 0.75pt + gray-section-color.darken(50%)
 #let white-section-color = rgb(255, 255, 255)
 
 // Each section leaves an invisible color marker (see section-block in components.typ).
