@@ -15,8 +15,8 @@
 // Shared by skills and achievement lists. Negative values move lists left.
 #let skills-list-left-margin = -1.8em
 #let gray-section-color = rgb(240, 240, 240)
-// Approximately 1px, at half opacity to keep the gray/white boundaries subtle.
-#let gray-section-border = 0.75pt + gray-section-color.darken(50%).transparentize(50%)
+// Approximately 1px, at 25% opacity to keep the gray/white boundaries subtle.
+#let gray-section-border = 0.75pt + gray-section-color.darken(50%).transparentize(75%)
 #let white-section-color = rgb(255, 255, 255)
 
 // Each section leaves an invisible color marker (see section-block in components.typ).
