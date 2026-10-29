@@ -273,17 +273,18 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
     [
     #block-project(
       text[
-        Maintenance or green-field development of various *web applications* or presentation websites, usually with a *tailor-made lightweight CMS.*, including taking up *most of the UI design* work.],
+        Developed and maintained *web applications* and websites, often with a *custom lightweight CMS*, and handled *most of the UI design* work.],
         "Web Design & Development",
         "2010 – 2013",
         "PHP, HTML, CSS, JavaScript / jQuery, OpenCart, WordPress",
         [
-          - A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
-          - Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
-          - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
-          - Complete website for a small family tennis-tutoring business
+          - A *Slovak equivalent of Groupon* (a local deals aggregator), for which I handled the entire front end and visual design
+          - Modernization and maintenance of an *OpenCart-based e-commerce website* for a nationwide retailer of bicycle parts and accessories
+          - Redesign of several websites for a Prague-based business offering city tours, experiences, and stag parties
+          - A complete website for a small, family-run tennis coaching business
           - Website for local a non-profit helping women with breast cancer
-        ]
+        ],
+        is-employment: false,
       )
     ]
   )
@@ -305,7 +306,8 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
           - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
           - Complete website for a small family tennis-tutoring business
           - Website for local a non-profit helping women with breast cancer
-        ]
+        ],
+        is-employment: false,
       )
     ]
   )

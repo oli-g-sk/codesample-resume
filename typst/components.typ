@@ -57,7 +57,8 @@
   ]
 )
 
-#let block-project(intro, role, dates, tech, achievements) = block(
+// Employment is the default; use false for freelance or personal project lists.
+#let block-project(intro, role, dates, tech, achievements, is-employment: true) = block(
   grid(
   columns: (5fr, 2fr), [
     #text()[
@@ -65,7 +66,7 @@
     ]
     \
     #if achievements != [] [
-      === Key achievements
+      === #if is-employment [Key achievements] else [Some of the Projects]
       // Reuse the skills lists' left offset without changing their spacing rules.
       #pad(left: skills-list-left-margin, achievements)
     ]
