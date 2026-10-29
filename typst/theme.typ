@@ -1,5 +1,5 @@
 // Extra breathing room at the top of every page (independent of section padding).
-#let page-top-padding = 1.2cm
+#let page-top-padding = 0.5cm
 
 // Padding inside each gray or white section.
 #let section-padding = (

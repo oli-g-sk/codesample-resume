@@ -1,4 +1,4 @@
-#import "theme.typ": section-padding, page-top-padding, accent-color, skills-list-marker, gray-section-color, white-section-color
+#import "theme.typ": section-padding, page-top-padding, accent-color, gray-section-color, white-section-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
@@ -20,7 +20,7 @@
   outset: (top: page-top-padding),
   below: 1em,
   inset: (
-    top: 0.95cm, bottom: 0.95cm,
+    top: 0.5cm, bottom: 0.95cm,
     left: 1.5cm, right: 1.5cm
   ),
   fill: accent-color,
@@ -62,7 +62,7 @@
   columns: (5fr, 2fr), [
     #text()[
       #intro
-    ],
+    ]
     \
     #if achievements != [] [
       === Key achievements
@@ -131,8 +131,6 @@
 ]
 
 #let skills-column(body, practices: false) = [
-  // This rule is local to the skills column; achievement lists keep their dots.
-  #set list(marker: text(weight: "bold", fill: accent-color, skills-list-marker))
   #show list.where(): it => block(inset: (
     top: 0em,
     bottom: if practices { -1.5em } else { -1em },

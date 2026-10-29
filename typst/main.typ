@@ -119,7 +119,8 @@
     [
       #block-project(
         text[
-          Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were critical.],
+          Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were *_critical_*.
+        ],
           ".NET Developer",
           "Sep 2022 – Oct 2025",
           "C# / .NET, WPF, WinForms, ASP.NET Core, gRPC, Jenkins",
