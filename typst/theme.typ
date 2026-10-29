@@ -10,7 +10,9 @@
 #let accent-color = rgb("#125b49")
 // Marker text for the two skills lists only. Replace "//" with "#", etc.
 #let skills-list-marker = "#"
-// Negative values move both skills lists left; 0em restores their usual position.
+// Marker text for achievement lists. Change independently of the skills marker.
+#let achievement-list-marker = "//"
+// Shared by skills and achievement lists. Negative values move lists left.
 #let skills-list-left-margin = -1.8em
 #let gray-section-color = rgb(240, 240, 240)
 // 0.75pt is approximately 1 CSS pixel; darken by 50% for the section borders.
@@ -60,9 +62,15 @@
   }
 }
 
-#let list-marker = block(inset: (top: 0.125em, bottom: 0em))[
-  #ellipse(width: 0.3em, height: 0.3em, fill: rgb(128, 128, 128, 255))
-]
+// Shared marker appearance for skills and achievements. Scaling is visual only,
+// so the heavier, larger characters do not increase line spacing.
+#let accent-list-marker(symbol) = scale(110%, reflow: false, text(
+  weight: "black",
+  fill: accent-color,
+  // Keep the marker heavy even when Arial falls back to its bold face.
+  stroke: 0.12pt + accent-color,
+  symbol,
+))
 
 #let cv-theme(body) = [
   #set page(
@@ -103,7 +111,7 @@
   #set par(justify: false)
   #set list(body-indent: 0.75em)
 
-  #set list(marker: list-marker)
+  #set list(marker: accent-list-marker(achievement-list-marker))
 
   #body
 ]

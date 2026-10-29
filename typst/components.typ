@@ -1,4 +1,4 @@
-#import "theme.typ": section-padding, page-top-padding, accent-color, skills-list-marker, skills-list-left-margin, gray-section-color, gray-section-border, white-section-color
+#import "theme.typ": section-padding, page-top-padding, accent-color, accent-list-marker, skills-list-marker, skills-list-left-margin, gray-section-color, gray-section-border, white-section-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
@@ -72,7 +72,8 @@
     \
     #if achievements != [] [
       === Key achievements
-      #achievements
+      // Reuse the skills lists' left offset without changing their spacing rules.
+      #pad(left: skills-list-left-margin, achievements)
     ]
   ],
   [
@@ -137,15 +138,8 @@
 ]
 
 #let skills-column(body, practices: false) = [
-  // Local to these skills lists; achievement lists retain their dot markers.
-  // Enlarge only the drawing, preserving marker width and list line spacing.
-  #set list(marker: scale(110%, reflow: false, text(
-    weight: "black",
-    fill: accent-color,
-    // A fine outline adds weight even when Arial falls back to its bold face.
-    stroke: 0.12pt + accent-color,
-    skills-list-marker,
-  )))
+  // Skills keep their own symbol, with the same appearance as achievements.
+  #set list(marker: accent-list-marker(skills-list-marker))
   #show list.where(): it => block(inset: (
     left: skills-list-left-margin,
     top: 0em,
