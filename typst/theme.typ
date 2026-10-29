@@ -13,13 +13,34 @@
 
 // Each section leaves an invisible color marker (see section-block in components.typ).
 // Find the last section that has started by this page, including a section carried
-// over from an earlier page. Only paint behind that section, down to the paper edge.
+// over from an earlier page, and continue its color down to the paper edge.
 // This changes the background without stretching content or moving page breaks.
 #let section-page-background() = context {
   let current-page = here().page()
   let sections = query(<section-background>).filter(section =>
     section.location().page() <= current-page
   )
+  // Color the top margin using the section that starts or continues this page.
+  // A new section's marker sits just inside its top padding. Later markers belong
+  // to sections farther down the page and must not change the color at the top.
+  // Page 1 keeps the teal header's own background instead.
+  if current-page > 1 {
+    let sections-at-top = sections.filter(section => {
+      let position = section.location().position()
+      position.page < current-page or (
+        position.y <= page-top-padding + section-padding.top + 0.01pt
+      )
+    })
+    if sections-at-top.len() > 0 {
+      place(top + left, rect(
+        width: 100%,
+        height: page-top-padding,
+        fill: sections-at-top.last().value,
+        stroke: none,
+      ))
+    }
+  }
+
   if sections.len() > 0 {
     let section = sections.last()
     let start = section.location().position()
