@@ -15,8 +15,8 @@
 // Shared by skills and achievement lists. Negative values move lists left.
 #let skills-list-left-margin = -1.8em
 #let gray-section-color = rgb(240, 240, 240)
-// 0.75pt is approximately 1 CSS pixel; darken by 50% for the section borders.
-#let gray-section-border = 0.75pt + gray-section-color.darken(50%)
+// Approximately 1px, at half opacity to keep the gray/white boundaries subtle.
+#let gray-section-border = 0.75pt + gray-section-color.darken(50%).transparentize(50%)
 #let white-section-color = rgb(255, 255, 255)
 
 // Each section leaves an invisible color marker (see section-block in components.typ).
@@ -62,6 +62,29 @@
   }
 }
 
+// Draw separators only where a new section changes the background color.
+// The marker is inside the section's padding, so subtract that padding to find
+// the actual boundary. Skip page starts: a continuing background has no border.
+#let section-page-borders() = context {
+  let current-page = here().page()
+  let sections = query(<section-background>)
+  for (index, section) in sections.enumerate() {
+    let position = section.location().position()
+    let boundary-y = position.y - section-padding.top
+    if index > 0 and position.page == current-page and (
+      boundary-y > page-top-padding + 0.01pt
+    ) {
+      let previous = sections.at(index - 1)
+      if previous.value != section.value {
+        place(top + left, dy: boundary-y, line(
+          length: 100%,
+          stroke: gray-section-border,
+        ))
+      }
+    }
+  }
+}
+
 // Shared marker appearance for skills and achievements. Scaling is visual only,
 // so the heavier, larger characters do not increase line spacing.
 #let accent-list-marker(symbol) = scale(110%, reflow: false, text(
@@ -76,6 +99,7 @@
   #set page(
     margin: (top: page-top-padding, bottom: 0pt, x: 0pt),
     background: section-page-background(),
+    foreground: section-page-borders(),
   )
   #set text(size: 9.7pt, font: "Arial")
   #set list(indent: 0.5em, body-indent: 0.45em)

@@ -1,4 +1,4 @@
-#import "theme.typ": section-padding, page-top-padding, accent-color, accent-list-marker, skills-list-marker, skills-list-left-margin, gray-section-color, gray-section-border, white-section-color
+#import "theme.typ": section-padding, page-top-padding, accent-color, accent-list-marker, skills-list-marker, skills-list-left-margin, gray-section-color, white-section-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
@@ -32,25 +32,19 @@
 
 // Shared layout for the two section colors. The marker has no visible content;
 // the page background uses it to continue the last section's color to the bottom.
-#let section-block(fill, body, stroke: none) = block(
+#let section-block(fill, body) = block(
   width: 100%,
   above: 0pt,
   below: 0pt,
   inset: section-padding,
   fill: fill,
-  stroke: stroke,
   [
     #metadata(fill) <section-background>
     #body
   ],
 )
 
-#let block-top-1(body) = section-block(
-  gray-section-color,
-  body,
-  // Horizontal borders only; the left and right edges remain open.
-  stroke: (top: gray-section-border, bottom: gray-section-border),
-)
+#let block-top-1(body) = section-block(gray-section-color, body)
 #let block-top-2(body) = section-block(white-section-color, body)
 
 #let block-company(name, projects) = block(
