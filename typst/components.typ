@@ -1,4 +1,4 @@
-#import "theme.typ": section-padding, page-top-padding, accent-color, gray-section-color, white-section-color
+#import "theme.typ": section-padding, page-top-padding, accent-color, skills-list-marker, skills-list-left-margin, gray-section-color, white-section-color
 
 #let h2(title) = [
   == #title #text(fill: accent-color)[█]
@@ -131,7 +131,10 @@
 ]
 
 #let skills-column(body, practices: false) = [
+  // Local to these skills lists; achievement lists retain their dot markers.
+  #set list(marker: text(weight: "bold", fill: accent-color, skills-list-marker))
   #show list.where(): it => block(inset: (
+    left: skills-list-left-margin,
     top: 0em,
     bottom: if practices { -1.5em } else { -1em },
   ))[
