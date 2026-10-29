@@ -132,7 +132,14 @@
 
 #let skills-column(body, practices: false) = [
   // Local to these skills lists; achievement lists retain their dot markers.
-  #set list(marker: text(weight: "bold", fill: accent-color, skills-list-marker))
+  // Enlarge only the drawing, preserving marker width and list line spacing.
+  #set list(marker: scale(110%, reflow: false, text(
+    weight: "black",
+    fill: accent-color,
+    // A fine outline adds weight even when Arial falls back to its bold face.
+    stroke: 0.12pt + accent-color,
+    skills-list-marker,
+  )))
   #show list.where(): it => block(inset: (
     left: skills-list-left-margin,
     top: 0em,
