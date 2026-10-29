@@ -8,6 +8,8 @@
 )
 
 #let accent-color = rgb("#125b49")
+// Marker text for the two skills lists only. Replace "//" with "#", etc.
+#let skills-list-marker = "//"
 #let gray-section-color = rgb(240, 240, 240)
 #let white-section-color = rgb(255, 255, 255)
 
