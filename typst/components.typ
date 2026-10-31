@@ -66,7 +66,7 @@
     ]
     \
     #if achievements != [] [
-      === #if is-employment [Key achievements] else [Some of the Projects]
+      === #if is-employment [Key achievements] else [Some of the projects]
       // Reuse the skills lists' left offset without changing their spacing rules.
       #pad(left: skills-list-left-margin, achievements)
     ]

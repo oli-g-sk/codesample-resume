@@ -28,7 +28,7 @@
 #block-top-2(
     grid(
       columns: (5fr, 2fr), [
-        = Professional Summary
+        = A few words about me
 
         Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
 
@@ -92,7 +92,7 @@
 )
 
 #block-top-2()[
-  = Professional Experience
+  = Professional experience
 
   #block-company(
     h2("Bagira Systems"),
@@ -282,7 +282,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
           - Modernization and maintenance of an *OpenCart-based e-commerce website* for a nationwide retailer of bicycle parts and accessories
           - Redesign of several websites for a Prague-based business offering city tours, experiences, and stag parties
           - A complete website for a small, family-run tennis coaching business
-          - Website for local a non-profit helping women with breast cancer
+          - Website for a local non-profit helping women with cancer
         ],
         is-employment: false,
       )
