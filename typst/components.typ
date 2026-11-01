@@ -1,6 +1,6 @@
 #import "theme.typ": section-padding, page-top-padding, accent-color, accent-list-marker, skills-list-marker, skills-list-left-margin, gray-section-color, white-section-color
 
-#let h2(title) = [
+#let h2(title) = block(below: 1.25em)[
   == #title #text(fill: accent-color)[█]
 ]
 
@@ -34,8 +34,8 @@
 // the page background uses it to continue the last section's color to the bottom.
 #let section-block(fill, body) = block(
   width: 100%,
-  above: 0pt,
-  below: 0pt,
+  above: 0.2em,
+  below: 0.2em,
   inset: section-padding,
   fill: fill,
   [
@@ -48,11 +48,13 @@
 #let block-top-2(body) = section-block(white-section-color, body)
 
 #let block-company(name, projects) = block(
-  inset: (top: 0.5em, bottom: 0.5em, left: 0em, right: 0em),
+  inset: (top: 0.2em, bottom: 0.5em, left: 0em, right: 0em),
   [
-    #text()[
-      #name
-      #projects
+    #block()[
+      #text()[
+        #name
+        #projects
+      ]
     ]
   ]
 )
@@ -61,10 +63,9 @@
 #let block-project(intro, role, dates, tech, achievements, is-employment: true) = block(
   grid(
   columns: (5fr, 2fr), [
-    #text()[
+    #block(below: 1.75em)[
       #intro
     ]
-    \
     #if achievements != [] [
       === #if is-employment [Key achievements] else [Some of the projects]
       // Reuse the skills lists' left offset without changing their spacing rules.
@@ -120,11 +121,15 @@
   ]
 )
 
-#let profile-title(name, role) = block(below: 2em, inset: (top: 0em))[
-  #text(size: 24pt, weight: "semibold", name)
+#let profile-title(name, role, location) = block(below: 2em, inset: (top: 0em))[
+  #text(size: 36pt, weight: "light", name)
 
-  #block(above: 0.85em)[
-    #text(size: 14pt, style: "italic", role)
+  #block(above: 2.25em)[
+    #text(size: 16pt, style: "italic", role)
+  ]
+
+  #block(above: 0.75em)[
+    #text(size: 14pt, location)
   ]
 ]
 
@@ -132,17 +137,22 @@
   #image(path, width: 4.5cm)
 ]
 
-#let skills-column(body, practices: false) = [
+#let skills-column(heading, body) = [
   // Skills keep their own symbol, with the same appearance as achievements.
+  #block(below: 0.5em, inset: (top: 0.75em))[
+    == #heading
+  ]
   #set list(marker: accent-list-marker(skills-list-marker))
   #show list.where(): it => block(inset: (
     left: skills-list-left-margin,
     top: 0em,
-    bottom: if practices { -1.5em } else { -1em },
+    // bottom: if practices { -1.5em } else { -1em },
   ))[
     #it
   ]
-  #body
+  #text(size:1.1em)[
+    #body
+  ]
 ]
 
 #let info-table(..args) = table(

@@ -11,8 +11,9 @@
 #block-header(
   grid(
     columns: (5fr, 3fr), [
-      #profile-title[Oliver Gašpar][Senior Software Engineer]
-      Brno, *Czech Republic* \
+      #profile-title[Oliver Gašpar][Senior Software Engineer][
+      Brno, *Czech Republic*
+      ]
 
       *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
       *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
@@ -30,11 +31,9 @@
       columns: (5fr, 2fr), [
         = A few words about me
 
-        Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*.
+        Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*. Equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
 
-        I am equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
-
-        I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is _intuitive for users_ and _maintainable for engineering_ teams.
+        I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is both _intuitive for users_ and _maintainable for engineering_ teams.
 
         These days, I'm upgrading my workflow by utilizing *cloud-native development practices* and super-charging it with *AI-assisted development _where appropriate_*.      ],
       []
@@ -48,42 +47,45 @@
           columns: (1fr, 1fr),
           gutter: 1.2cm,
           [
-            #skills-column[
-              == Languages & Frameworks
-
-              - *C\# / .NET* / .NET Framework
-              - *ASP.NET Core*, Blazor
-              - *REST API*, gRPC, Webhooks
-              - Entity Framework / *EF Core*
-              - *WPF*, Windows Forms
-              - *Avalonia*, MAUI, Xamarin
-              - *PostgreSQL*, MS SQL Server
-              - *Android SDK*, Flutter
-              - *Java*, Kotlin, Dart
-              - Spring Boot, JOOQ
-              - HTML / CSS
-              - JavaScript / TypeScript
-              - Unity, Godot
-            ]
+            #skills-column(
+              "Languages & Frameworks",
+              [
+                  - *C\# / .NET* / .NET Framework
+                  - *ASP.NET Core*, Blazor
+                  - *REST API*, gRPC, Webhooks
+                  - Entity Framework / *EF Core*
+                  - *WPF*, Windows Forms
+                  - *Avalonia*, MAUI, Xamarin
+                  - *PostgreSQL*, MS SQL Server
+                  - *Android SDK*, Flutter
+                  - *Java*, Kotlin, Dart
+                  - Spring Boot, JOOQ
+                  - HTML / CSS
+                  - JavaScript / TypeScript
+                  - Unity, Godot
+              ]
+            )
           ],
           [
-            #skills-column(practices: true)[
-              == Practices & Tools
+            #skills-column(
+              "Practices & Tools",
+              [
 
-              - Model-View-ViewModel (*MVVM*)
-              - *Agentic Engineering* (SDD)
-              - Test-Driven Development (TDD)
-              - Performance Optimization
-              - Refactoring, Code Reviews
-              - DI, IoC, Mediator Pattern
-              - *Git*, *Docker*
-              - CI / CD, Github Actions
-              - Azure DevOps, Jenkins
-              - Jira, Confluence
-              - *Codex*, *Claude Code*
-              - Automation, no-code, n8n
-              - UI / UX Design
-            ]
+                - Model-View-ViewModel (*MVVM*)
+                - *Agentic Engineering* (SDD)
+                - Test-Driven Development (TDD)
+                - Performance Optimization
+                - Refactoring, Code Reviews
+                - DI, IoC, Mediator Pattern
+                - *Git*, *Docker*
+                - CI / CD, Github Actions
+                - Azure DevOps, Jenkins
+                - Jira, Confluence
+                - *Codex*, *Claude Code*
+                - Automation, no-code, n8n
+                - UI / UX Design
+              ]
+            )
           ],
         )
       ],
@@ -92,8 +94,6 @@
 )
 
 #block-top-2()[
-  = Professional experience
-
   #block-company(
     h2("Bagira Systems"),
     [
@@ -119,6 +119,7 @@
     [
       #block-project(
         text[
+          === PRIME
           Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were *_critical_*.
         ],
           ".NET Developer",
@@ -138,6 +139,7 @@
 
         #block-project(
           text[
+            === LIVE
             Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.],
             ".NET Developer",
             "Oct 2021 – Sep 2022",
@@ -154,11 +156,13 @@
 
           #block-project(
             text[
+              === Switcher
               Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.],
               ".NET Developer",
               "Oct 2020 – Sep 2021",
               "C# / .NET, WPF",
               [
+                - Had a voice in shaping a brand-new product on top of an established
                 - *Was responsible for* major parts of the *new UI and features*.
                 - Contributed to *engine-level features* and business logic.
               ],
