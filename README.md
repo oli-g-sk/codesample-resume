@@ -7,7 +7,8 @@ You can find more information about me, my coding experience, and personal proje
 
 ### Install Typst
 
-First, install [Typst](https://typst.app/) using one of the options below, based on your OS and package manager of choice.
+You'll need [Typst](https://typst.app/) to compile the document for a better reading experience.
+You can install it using one of the options below, based on your OS and package manager of choice.
 
 #### Windows
 
@@ -43,13 +44,13 @@ brew install typst
 
 ### Compile the CV
 
-After you (obviously) check out the repository, run the following command in its root:
+After you (obviously) checkout the repository, run the following command in its root:
 
 ```bash
 typst compile cv.typ
 ```
 
-*NOTE*: `typst` has to be in your PATH already. Your package manager probably took care of that, but if not, try opening a new terminal session or signing out from your user profile.
+*NOTE*: `typst` has to be on your PATH already. Your package manager probably took care of that, but if not, try opening a new terminal session or signing out from your user profile.
 
 A file called `cv.pdf` will be generated.
 
