@@ -29,7 +29,7 @@ scoop install typst
 
 ### Linux
 
-Follow the [Typst installation instructions](https://typst.app/open-source/).
+Follow the [Typst installation instructions](https://typst.app/open-source/#download/).
 
 ### macOS
 
