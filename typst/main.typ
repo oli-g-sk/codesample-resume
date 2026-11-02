@@ -57,48 +57,53 @@
 
 #block-top-1(
     grid(
-      columns: (5fr, 2fr), [
+      columns: (1), [
         #grid(
-          columns: (1fr, 1fr),
+          columns: (1fr, 1fr, 1fr),
           gutter: 1.2cm,
           [
             #skills-column(
-              "Languages & Frameworks",
+              "Languages & Tech stack",
               [
-                  - *C\# / .NET* / .NET Framework
+                  - *C\# / .NET Core*, Framework
                   - *ASP.NET Core*, Blazor
                   - *REST API*, gRPC, Webhooks
                   - Entity Framework / *EF Core*
                   - *WPF*, Windows Forms
                   - *Avalonia*, MAUI, Xamarin
                   - *PostgreSQL*, MS SQL Server
-                  - *Android SDK*, Flutter
-                  - *Java*, Kotlin, Dart
-                  - Spring Boot, JOOQ
-                  - HTML / CSS
-                  - JavaScript / TypeScript
-                  - Unity, Godot
+                  - *Android SDK*, Flutter, Jetpack
+                  - *Java*, Spring Boot, JOOQ,
               ]
             )
           ],
           [
+            #skills-column("Architecture & Practices",
+            [
+              - *MVVM* Model-View-ViewModel
+              - *Dependency Injection (DI)*
+              - Inversion of Control (IoC)
+              - *Agentic Engineering*
+              - Test-Driven Development
+              - Performance Optimization
+              - Refactoring, Code Reviews
+              - Continuous Integration (CI)
+              - UI / UX Design
+            ])
+          ],
+          [
             #skills-column(
-              "Practices & Tools",
+              "Tools",
               [
-
-                - Model-View-ViewModel (*MVVM*)
-                - *Agentic Engineering* (SDD)
-                - Test-Driven Development (TDD)
-                - Performance Optimization
-                - Refactoring, Code Reviews
-                - DI, IoC, Mediator Pattern
                 - *Git*, *Docker*
-                - CI / CD, Github Actions
+                - *Codex*, *Claude Code*
+                - *Github Actions*
+                - *Supabase*
+                - Automation, no-code, *n8n*
+                - Firebase
+                - Sentry
                 - Azure DevOps, Jenkins
                 - Jira, Confluence
-                - *Codex*, *Claude Code*
-                - Automation, no-code, n8n
-                - UI / UX Design
               ]
             )
           ],

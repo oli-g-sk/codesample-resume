@@ -161,7 +161,7 @@
 
 #let skills-column(heading, body) = [
   // Skills keep their own symbol, with the same appearance as achievements.
-  #block(below: 1.8em, inset: (top: 0.5em))[
+  #block(below: 1.8em, inset: (top: 0.5em, left: -0.125em))[
     #text(size: 1.3em, fill: accent-color)[
       #heading
     ]
