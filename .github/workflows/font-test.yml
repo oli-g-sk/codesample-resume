@@ -1,0 +1,21 @@
+name: Check Windows fonts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: windows-2025
+
+    steps:
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: "0.15.1"
+
+      - name: Check Bahnschrift availability
+        shell: pwsh
+        run: |
+          typst fonts
+          if (-not ((typst fonts) -match 'Bahnschrift')) {
+            throw "Bahnschrift is unavailable on this runner."
+          }
