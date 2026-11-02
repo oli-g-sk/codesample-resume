@@ -375,6 +375,11 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
       [Czech], [Native],
       [German], [Elementary],
     )
+    #block(inset: (top: 1.5em))
+      #text(size: 2em)[
+        +421949853547
+      ]
+      oliver.g.sk\@gmail.com
   ],
   [
     = Education
