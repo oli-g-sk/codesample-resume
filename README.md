@@ -9,15 +9,35 @@ First, install [Typst](https://typst.app/) using one of the options below, based
 
 ### Windows
 
-- WinGet: `winget install --id Typst.Typst -e`
-- Chocolatey: `choco install typst`
-- Scoop: `scoop install typst`
+WinGet
+
+```powershell
+winget install --id Typst.Typst -e
+```
+
+Chocolatey
+
+```powershell
+choco install typst
+```
+
+Scoop
+
+```powershell
+scoop install typst
+```
 
 ### Linux
-- Follow the [Typst installation instructions](https://typst.app/open-source/).
+
+Follow the [Typst installation instructions](https://typst.app/open-source/).
 
 ### macOS
-- Homebrew: `brew install typst`
+
+Homebrew
+
+```bash
+brew install typst
+```
 
 ## 2. Download
 
