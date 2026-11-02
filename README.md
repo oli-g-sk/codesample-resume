@@ -1,17 +1,18 @@
-# 👋 Hello, I'm Oliver and this is my CV! 📄
+# 👋 Hello, I'm Oliver & this is my CV! 📄
 
 _If you're seeing this, it's likely that I'm actively or passively looking for new opportunities.
 You can find more information about me, my coding experience, and personal projects in my resume._
 
-``` 
+```csharp 
 📞 +4219░▒░▓▓▒░▓
-📭 oliv▓▒▓░▒▒░@gmail.com
-🤔 // maybe not a good idea to put this in a public repo
+📩 oliv▓▒▓░▒▒░@gmail.com
+🤔 "maybe not a good idea to put this in a public repo"
 ```
 
-If you're still reading, please continue. There's two ways to get the CV up and running.
+If you're still reading, please continue. You can view the resume in its raw form [right here on GitHub](https://github.com/oli-g-sk/this-is-my-cv/blob/main/cv.typ).
+If you prefer a more traditional PDF-like experience, there's two ways to get the CV up and running.
 
-## Build it yourself (recommended)
+## 🛠️ Build it yourself (recommended)
 
 ### Install Typst
 
@@ -62,6 +63,6 @@ typst compile cv.typ
 
 A file called `cv.pdf` will be generated.
 
-## Download
+## 📦 Download
 
 For your convenience (or if you prefer your candidates precompiled), an up-to-date version is available for download.
