@@ -113,13 +113,16 @@
     )
 )
 
-#block(inset: heading-padding)[
-  #text(size: 1.6em, fill: accent-color)[
-    Professional experience
-  ]
-]
+
 
 #block-top-2()[
+
+  #block(inset: (top:1.6em, bottom: 0.5em))[
+    #text(size: 1.8em, fill: accent-color)[
+      Professional experience
+    ]
+  ]
+
   #block-company(
     h2("Bagira Systems"),
     [

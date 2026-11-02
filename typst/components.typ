@@ -143,15 +143,15 @@
   ]
 )
 
-#let profile-title(name, role, location) = block(below: 2em, inset: (top: 0em))[
+#let profile-title(name, role, location) = block(below: 2em, inset: (top: 0.5em))[
   #text(size: 36pt, weight: "light", name)
 
   #block(above: 2.25em)[
-    #text(size: 16pt, style: "italic", role)
+    #text(size: 14pt, style: "italic", role)
   ]
 
   #block(above: 0.75em)[
-    #text(size: 14pt, location)
+    #text(size: 12pt, location)
   ]
 ]
 
