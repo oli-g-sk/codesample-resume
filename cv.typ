@@ -3,8 +3,8 @@
   paper: "a4",
 )
 
-#import "theme.typ": cv-theme
-#import "components.typ": *
+#import "./typst/theme.typ": cv-theme
+#import "./typst/components.typ": *
 
 #show: cv-theme
 
@@ -32,7 +32,7 @@
       #section-contact()
     ],
     [
-      #profile-photo("photo.jpg")
+      #profile-photo("../assets/photo.jpg")
     ]
   )
 )
@@ -394,6 +394,3 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   ]
 )
 ]
-
-
-
