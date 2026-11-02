@@ -1,7 +1,11 @@
 # Hello, I'm Oliver!
 
-If you're reading this, it's likely that I'm actively or passively looking for new opportunities.
-You can find more information about me, my coding experience, and personal projects in my CV.
+``` 
+📄 ...and this repo is my CV!
+```
+
+_If you're reading this, it's likely that I'm actively or passively looking for new opportunities.
+You can find more information about me, my coding experience, and personal projects in my resume._
 
 ## Build it yourself (recommended)
 
