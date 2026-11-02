@@ -5,25 +5,19 @@ You can find more information about me, my coding experience, and personal proje
 
 ## 1. Build it yourself (recommended)
 
-First, install [Typst](https://typst.app/) using one of the options below, based on your OS or package manager of choice.
+First, install [Typst](https://typst.app/) using one of the options below, based on your OS and package manager of choice.
 
 ### Windows
 
-#### WinGet
-`winget install --id Typst.Typst -e`
-
-#### Chocolatey
-`choco install typst`
-
-#### Scoop
-`scoop install typst`
+- WinGet: `winget install --id Typst.Typst -e`
+- Chocolatey: `choco install typst`
+- Scoop: `scoop install typst`
 
 ### Linux
-Follow the [Typst installation instructions](https://typst.app/open-source/).
+- Follow the [Typst installation instructions](https://typst.app/open-source/).
 
 ### macOS
-#### Homebrew
-`brew install typst`
+- Homebrew: `brew install typst`
 
 ## 2. Download
 
