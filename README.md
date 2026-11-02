@@ -1,11 +1,15 @@
-# Hello, I'm Oliver!
+# 👋 Hello, I'm Oliver and this is my CV! 📄
+
+_If you're seeing this, it's likely that I'm actively or passively looking for new opportunities.
+You can find more information about me, my coding experience, and personal projects in my resume._
 
 ``` 
-📄 ...and this repo is my CV!
+📞 +4219░▒░▓▓▒░▓
+📭 oliv▓▒▓░▒▒░@gmail.com
+🤔 // maybe not a good idea to put this in a public repo
 ```
 
-_If you're reading this, it's likely that I'm actively or passively looking for new opportunities.
-You can find more information about me, my coding experience, and personal projects in my resume._
+If you're still reading, please continue. There's two ways to get the CV up and running.
 
 ## Build it yourself (recommended)
 
