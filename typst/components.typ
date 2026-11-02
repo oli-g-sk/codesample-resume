@@ -37,8 +37,8 @@
 // the page background uses it to continue the last section's color to the bottom.
 #let section-block(fill, body) = block(
   width: 100%,
-  above: 0.2em,
-  below: 0.2em,
+  above: 0em,
+  below: 0em,
   inset: section-padding,
   fill: fill,
   [

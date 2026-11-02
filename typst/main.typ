@@ -26,7 +26,7 @@
 
 #block-header(
   grid(
-    columns: (5fr, 3fr),
+    columns: (2fr, 1fr),
     [
       #profile-title[Oliver Gašpar][Senior Software Engineer][Brno, *Czech Republic*]
       #section-contact()
@@ -288,7 +288,6 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
   )
 ]
 
-\ \ \
 
 #block-top-2()[
   #block-company(
