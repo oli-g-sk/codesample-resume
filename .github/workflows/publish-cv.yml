@@ -7,34 +7,77 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: github-pages
   cancel-in-progress: false
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Render on Windows, where Bahnschrift is installed.
+  # Pass the PDF to the deployment job as an artifact.
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-2025
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Typst
         uses: typst-community/setup-typst@v5
         with:
           typst-version: "0.15.1"
 
-      - name: Build PDF
+      - name: Verify Bahnschrift is available
+        shell: pwsh
         run: |
-          mkdir -p build/public
-          typst compile cv.typ build/public/cv.pdf
+          $fonts = typst fonts
+          if ($LASTEXITCODE -ne 0) {
+            throw "Could not list fonts."
+          }
+          if (-not ($fonts -match 'Bahnschrift')) {
+            throw "Bahnschrift is unavailable on this runner."
+          }
+
+      - name: Build PDF
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          typst compile cv.typ build/cv.pdf
+          if ($LASTEXITCODE -ne 0) {
+            throw "CV compilation failed."
+          }
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v7
+        with:
+          name: cv-pdf
+          path: build/cv.pdf
+          if-no-files-found: error
+          retention-days: 1
+
+  # Publish on Ubuntu, which supports the Pages deployment actions.
+  # Uses the PDF built on Windows without needing its fonts.
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download PDF
+        uses: actions/download-artifact@v8
+        with:
+          name: cv-pdf
+          path: build/public
 
       - name: Create Pages entry point
         run: |
