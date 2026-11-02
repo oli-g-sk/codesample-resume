@@ -65,4 +65,4 @@ A file called `cv.pdf` will be generated.
 
 ## Download 📦
 
-For your convenience (or if you prefer your candidates precompiled), an up-to-date version is available for download.
+For your convenience (or if you prefer your candidates precompiled), an up-to-date version is [available for download](https://oli-g-sk.github.io/this-is-my-cv/cv.pdf).
