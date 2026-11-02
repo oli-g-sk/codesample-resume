@@ -1,4 +1,4 @@
-# Hello, I'm Oliver & this is my CV! 👋 
+# Hello, I'm Oliver, and this is my CV 👋
 
 If you're seeing this, it's likely that I'm actively or passively looking for new opportunities.
 You can find more information about me, my coding experience, and personal projects in this resume.
