@@ -8,17 +8,28 @@
 
 #show: cv-theme
 
+
+#let heading-padding = (
+  left: 1.5cm, right: 1.5cm,
+  top: 1cm, bottom: 0cm
+)
+
+// #set text(font: "Georgia", size: 11pt)
+#set text(font: "Bahnschrift", spacing: 0.35em)
+
+#let section-contact() = block[
+    *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
+    *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
+    *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852] \
+    *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
+]
+
 #block-header(
   grid(
-    columns: (5fr, 3fr), [
-      #profile-title[Oliver Gašpar][Senior Software Engineer][
-      Brno, *Czech Republic*
-      ]
-
-      *Phone*: #link("tel:+421949853547")[+421 949 853 547] \
-      *E-mail*: #link("mailto:oliver.g.sk@gmail.com")[oliver.g.sk\@gmail.com] \
-      *LinkedIn*: #link("https://www.linkedin.com/in/oliver-gašpar-b8281852")[linkedin.com/in/oliver-gašpar-b8281852] \
-      *Github*: #link("https://github.com/oli-g-sk")[github.com/oli-g-sk]
+    columns: (5fr, 3fr),
+    [
+      #profile-title[Oliver Gašpar][Senior Software Engineer][Brno, *Czech Republic*]
+      #section-contact()
     ],
     [
       #profile-photo("photo.jpg")
@@ -26,11 +37,15 @@
   )
 )
 
+#block(inset: heading-padding)[
+  #text(size: 1.8em, fill: accent-color)[
+    Introduction
+  ]
+]
+
 #block-top-2(
     grid(
       columns: (5fr, 2fr), [
-        = A few words about me
-
         Software engineer with *15 years of experience* building *desktop, web, and mobile* applications, primarily in the *.NET ecosystem*. Equally comfortable working across the full stack, from *native UI development* to *backend services* or *API design*.
 
         I also enjoy *modernizing legacy systems*, reducing technical debt, improving developer workflows, and delivering software that is both _intuitive for users_ and _maintainable for engineering_ teams.
@@ -93,6 +108,12 @@
     )
 )
 
+#block(inset: heading-padding)[
+  #text(size: 1.6em, fill: accent-color)[
+    Professional experience
+  ]
+]
+
 #block-top-2()[
   #block-company(
     h2("Bagira Systems"),
@@ -119,7 +140,9 @@
     [
       #block-project(
         text[
-          === PRIME
+          #block(inset: (top: -0em))[
+            === PRIME
+          ]
           Worked on the company's *flagship broadcast graphics platform* with a real-time playout system where *reliability and responsiveness* were *_critical_*.
         ],
           ".NET Developer",
@@ -139,7 +162,9 @@
 
         #block-project(
           text[
-            === LIVE
+            #block(inset: (top: -0em))[
+              === LIVE
+            ]
             Took a major part in building a greenfield project -- *a cloud-oriented platform* exposing the functionality of the company's primary product through web technologies.],
             ".NET Developer",
             "Oct 2021 – Sep 2022",
@@ -156,7 +181,9 @@
 
           #block-project(
             text[
-              === Switcher
+              #block(inset: (top: -0em))[
+                === PRIME Switcher
+              ]
               Worked in a small team building a new, specialized product wrapped around the company's established broadcast platform.],
               ".NET Developer",
               "Oct 2020 – Sep 2021",
@@ -224,6 +251,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
         "Feb 2017 – Aug 2017",
         "Android SDK, Java",
         [
+          - Deliveder a small, interactive Android app aimed at children by myself
           - *Integrated video advertising* into the mobile application of a *major Czech radio* station.
           - Worked on a new application combining concepts from recruitment platforms and social-media-style stories in a small team of three.
         ]
@@ -245,6 +273,8 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
         [
           - *Owned Android implementation* and most platform-specific integrations.
           - Collaborated on UI design, adapting shared designs to Android while *advocating for native Android user experience*.
+          - *Integrated observability platforms* like Firebase Crashlytics and Sentry
+          - *Migrated our version control* system of choice from TFS *to Git*
           - Helped shape a unique concept combining an alarm clock with social networking features.
           - The released app *won both main awards at Czech AppParade 25*.
         ]
@@ -252,6 +282,8 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
     ]
   )
 ]
+
+\ \ \
 
 #block-top-2()[
   #block-company(
@@ -264,7 +296,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
         "PHP, HTML, CSS",
         [
           - Developed and maintained public-facing websites for the Faculty of Law.
-          - Developed and *maintained internal systems* used by employees and external collaborators.
+          - Developed and *maintained internal systems* used by the faculty's employees, researchers and external collaborators.
         ]
       )
     ]
@@ -278,7 +310,7 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
     #block-project(
       text[
         Developed and maintained *web applications* and websites, often with a *custom lightweight CMS*, and handled *most of the UI design* work.],
-        "Web Design & Development",
+        "Web Developer",
         "2010 – 2013",
         "PHP, HTML, CSS, JavaScript / jQuery, OpenCart, WordPress",
         [
@@ -295,33 +327,37 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
 ]
 
 #block-top-2()[
-  #block-company(
+  #block-personal(
     h2("Personal Projects & Open-Source"),
     [
     #block-project(
       text[
-        Maintenance or green-field development of various *web applications* or presentation websites, usually with a *tailor-made lightweight CMS.*, including taking up *most of the UI design* work.],
-        "Web Design & Development",
-        "2010 – 2013",
-        "PHP, HTML, CSS, JavaScript / jQuery, OpenCart, WordPress",
-        [
-          - A *Slovak equivalent of Groupon* (a local deals aggregator) where I was responsible for the entire front-end and visual design
-          - Modernization and maintenance of an *OpenCart-based e-commerce website* for a country-wide retailer of bicycle parts and accessories
-          - Redesign of a group of websites for a Prague-based business organizing unique city tours, experiences and stag parties
-          - Complete website for a small family tennis-tutoring business
-          - Website for local a non-profit helping women with breast cancer
+        I really love building software in my spare time as well, either to come up with the "next big thing", or because I thought of an interesting technical challenge or experiment to try.
         ],
+        "",
+        "",
+        "",
+        [
+          - An experimental suite of .NET apps with an *unique approach to getting familiar with a foreign language*. Uses *OpenAI APIs*, and consists mostly of...
+            - A *Telegram Bot* that *tranlates* text, *transcribes* voice messages, and *speaks* to you in the language of your choosing
+            - A web UI which provides *subtitles for social media content* (Reels, TikToks, YouTube) in the chosen language
+            - An *ASP.NET* app serving both above use cases
+            - A *desktop GUI* for further fine-tuning the translated content
+          - A personal *spending tracking app with an LLM twist*. Cross-platform, made in .NET using *Avalonia*, with *backend-as-a-service* through *Supabase*.
+          - *Android app turning* user's favorite *camera roll footage into live wallpapers*, chosen on random on every screen unlock
+          - Early-stage *restaurant rating* application with an unique take on the discovery experience, build on the *Java* stack with Spring Boot.
+          - A developer-focused *static site generator* (or, a .NET project template) to bootstrap a site on GitHub Pages with minimum effort, backed by *JSON content*
+        ],
+
         is-employment: false,
       )
     ]
   )
 ]
 
-\
-
 #block-top-1()[
 #grid(column-gutter: 1em,
-  columns: (2fr, 2.5fr),
+  columns: (3fr, 2fr, 2fr),
   [
     = Languages
     #info-table(
@@ -343,7 +379,6 @@ Worked on multiple short- and long-term *projects across platforms and stacks* i
     )
   ],
   [
-
   ]
 )
 ]

@@ -4,7 +4,10 @@
   == #title #text(fill: accent-color)[█]
 ]
 
-#let section-rule = block(above: 0.65em, below: 1.5em)[ #line(length: 100%, stroke: 0.1pt) ]
+#let section-rule = block(above: 0.65em, below: 1.5em)
+[ 
+  #line(length: 100%, stroke: 1pt) 
+]
 
 #let tip(body) = block(
   fill: rgb("#eef6ff"),
@@ -59,6 +62,18 @@
   ]
 )
 
+#let block-personal(name, projects) = block(
+  inset: (top: 0.2em, bottom: 0.5em, left: 0em, right: 0em),
+  [
+    #block()[
+      #text()[
+        #name
+        #projects
+      ]
+    ]
+  ]
+)
+
 // Employment is the default; use false for freelance or personal project lists.
 #let block-project(intro, role, dates, tech, achievements, is-employment: true) = block(
   grid(
@@ -80,15 +95,22 @@
             #table(
               stroke: 0em,
               inset: 0em,
-              row-gutter: 0.75em,
+              row-gutter: 0.6em,
               columns: 1fr,
-              [*#role*],
-              [#block(inset: (bottom: 0.5em))[
-                *#dates*,
+              [#block(inset: (bottom: 0em))[
+                #text(fill: accent-color)[
+                  *#role*
+                ]
               ]],
-              section-rule,
-              [#block(inset: (top: 0.5em))[
-                #emph(tech)
+              [#block(inset: (bottom: 0em))[
+                #text(fill: accent-color)[
+                  *#dates*
+                ]
+              ]],
+              [#block(inset: (top: 0em))[
+                #text()[
+                  #emph(tech)
+                ]
               ]]
             )
           ]
@@ -139,8 +161,10 @@
 
 #let skills-column(heading, body) = [
   // Skills keep their own symbol, with the same appearance as achievements.
-  #block(below: 0.5em, inset: (top: 0.75em))[
-    == #heading
+  #block(below: 1.8em, inset: (top: 0.5em))[
+    #text(size: 1.3em, fill: accent-color)[
+      #heading
+    ]
   ]
   #set list(marker: accent-list-marker(skills-list-marker))
   #show list.where(): it => block(inset: (
