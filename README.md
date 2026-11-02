@@ -3,11 +3,13 @@
 If you're reading this, it's likely that I'm actively or passively looking for new opportunities.
 You can find more information about me, my coding experience, and personal projects in my CV.
 
-## 1. Build it yourself (recommended)
+## Build it yourself (recommended)
+
+### Install Typst
 
 First, install [Typst](https://typst.app/) using one of the options below, based on your OS and package manager of choice.
 
-### Windows
+#### Windows
 
 WinGet
 
@@ -27,11 +29,11 @@ Scoop
 scoop install typst
 ```
 
-### Linux
+#### Linux
 
 Follow the [Typst installation instructions](https://typst.app/open-source/#download/).
 
-### macOS
+#### macOS
 
 Homebrew
 
@@ -39,6 +41,18 @@ Homebrew
 brew install typst
 ```
 
-## 2. Download
+### Compile the CV
+
+After you (obviously) check out the repository, run the following command in its root:
+
+```bash
+typst compile cv.typ
+```
+
+*NOTE*: `typst` has to be in your PATH already. Your package manager probably took care of that, but if not, try opening a new terminal session or signing out from your user profile.
+
+A file called `cv.pdf` will be generated.
+
+## Download
 
 For your convenience (or if you prefer your candidates precompiled), an up-to-date version is available for download.
