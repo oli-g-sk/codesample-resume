@@ -1,0 +1,60 @@
+name: Publish CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: "0.15.1"
+
+      - name: Build PDF
+        run: |
+          mkdir -p build/public
+          typst compile cv.typ build/public/cv.pdf
+
+      - name: Create Pages entry point
+        run: |
+          cat > build/public/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+            <meta charset="utf-8">
+            <title>Oliver's CV</title>
+            <a href="cv.pdf">Download my CV</a>
+          </html>
+          HTML
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload published files
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/public
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
