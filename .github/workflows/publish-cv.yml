@@ -3,16 +3,39 @@ name: Publish CV
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: github-pages
+  group: github-pages-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
+
+  # Validate the README page on PRs; publish it only after merging to main.
+  build-site:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v7
+
+      - name: Render README as the Pages entry point
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 src/site/render.py
+
+      - name: Upload rendered site
+        uses: actions/upload-artifact@v7
+        with:
+          name: cv-site
+          path: build/public
+          if-no-files-found: error
+          retention-days: 1
 
   # Render on Windows, where Bahnschrift is installed.
   # Pass the PDF to the deployment job as an artifact.
@@ -60,7 +83,8 @@ jobs:
   # Publish on Ubuntu, which supports the Pages deployment actions.
   # Uses the PDF built on Windows without needing its fonts.
   deploy:
-    needs: build
+    if: github.ref == 'refs/heads/main'
+    needs: [build, build-site]
     runs-on: ubuntu-24.04
 
     permissions:
@@ -73,22 +97,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Download rendered site
+        uses: actions/download-artifact@v8
+        with:
+          name: cv-site
+          path: build/public
+
       - name: Download PDF
         uses: actions/download-artifact@v8
         with:
           name: cv-pdf
           path: build/public
-
-      - name: Create Pages entry point
-        run: |
-          cat > build/public/index.html <<'HTML'
-          <!doctype html>
-          <html lang="en">
-            <meta charset="utf-8">
-            <title>Oliver's CV</title>
-            <a href="cv.pdf">Download my CV</a>
-          </html>
-          HTML
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
