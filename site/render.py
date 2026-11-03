@@ -2,7 +2,9 @@
 
 Run `python site/render.py` from any directory. GITHUB_TOKEN is optional locally
 and supplied by Actions; GITHUB_REPOSITORY supplies the Markdown link context.
-README.md is the only content source. Edit index.html/style.css for presentation.
+README.md and PROJECTS.md supply /cv/ and /projects/. The welcome page is HTML.
+Edit index.html for welcome copy, page.html for the shared Markdown page wrapper,
+and style.css for presentation. No Markdown content is duplicated in HTML.
 The publish workflow combines this output with the existing Windows-built PDF.
 """
 
@@ -10,19 +12,11 @@ import json
 import os
 from pathlib import Path
 import shutil
+from string import Template
 from urllib.request import Request, urlopen
 
 
-def main():
-    root = Path(__file__).resolve().parents[1]
-    source = root / "site"
-    output = root / "build" / "public"
-    markdown = (root / "README.md").read_text(encoding="utf-8")
-
-    # Keep the README intact while fixing its pre-rename Pages URL on the site.
-    markdown = markdown.replace(
-        "https://oli-g-sk.github.io/this-is-my-cv/cv.pdf", "cv.pdf"
-    )
+def render_markdown(markdown):
     headers = {
         "Accept": "text/html",
         "Content-Type": "application/json",
@@ -45,14 +39,39 @@ def main():
         content = response.read().decode("utf-8")
     if not content.strip():
         raise RuntimeError("GitHub returned empty Markdown HTML.")
+    return content
 
-    template = (source / "index.html").read_text(encoding="utf-8")
+
+def main():
+    root = Path(__file__).resolve().parents[1]
+    source = root / "site"
+    output = root / "build" / "public"
     output.mkdir(parents=True, exist_ok=True)
-    (output / "index.html").write_text(
-        template.replace("<!-- README -->", content), encoding="utf-8"
-    )
+    shutil.copyfile(source / "index.html", output / "index.html")
     shutil.copyfile(source / "style.css", output / "style.css")
-    print(f"Rendered README.md to {output / 'index.html'}")
+    template = Template((source / "page.html").read_text(encoding="utf-8"))
+
+    for filename, slug, title, description in (
+        ("README.md", "cv", "CV", "Oliver's CV and resume download."),
+        ("PROJECTS.md", "projects", "Projects", "Oliver's personal projects."),
+    ):
+        markdown = (root / filename).read_text(encoding="utf-8")
+        # Keep the README intact and the PDF at its existing public /cv.pdf URL.
+        if filename == "README.md":
+            markdown = markdown.replace(
+                "https://oli-g-sk.github.io/this-is-my-cv/cv.pdf", "../cv.pdf"
+            )
+        page = template.substitute(
+            title=title,
+            description=description,
+            content=render_markdown(markdown),
+            cv_current=' aria-current="page"' if slug == "cv" else "",
+            projects_current=' aria-current="page"' if slug == "projects" else "",
+        )
+        destination = output / slug / "index.html"
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(page, encoding="utf-8")
+        print(f"Rendered {filename} to {destination}")
 
 
 if __name__ == "__main__":

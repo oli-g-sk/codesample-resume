@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
 
-  # Validate the README page on PRs; publish it only after merging to main.
+  # Validate the static site on PRs; publish it only after merging to main.
   build-site:
     runs-on: ubuntu-24.04
 
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v7
 
-      - name: Render README as the Pages entry point
+      - name: Build welcome, CV, and Projects pages
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 site/render.py
