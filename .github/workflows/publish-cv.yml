@@ -27,7 +27,7 @@ jobs:
       - name: Render README as the Pages entry point
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 src/site/render.py
+        run: python3 site/render.py
 
       - name: Upload rendered site
         uses: actions/upload-artifact@v7

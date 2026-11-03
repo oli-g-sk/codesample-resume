@@ -1,6 +1,6 @@
 """Build build/public with Python 3.8+ and GitHub's Markdown API; no packages needed.
 
-Run `python src/site/render.py` from any directory. GITHUB_TOKEN is optional locally
+Run `python site/render.py` from any directory. GITHUB_TOKEN is optional locally
 and supplied by Actions; GITHUB_REPOSITORY supplies the Markdown link context.
 README.md is the only content source. Edit index.html/style.css for presentation.
 The publish workflow combines this output with the existing Windows-built PDF.
@@ -14,8 +14,8 @@ from urllib.request import Request, urlopen
 
 
 def main():
-    root = Path(__file__).resolve().parents[2]
-    source = root / "src" / "site"
+    root = Path(__file__).resolve().parents[1]
+    source = root / "site"
     output = root / "build" / "public"
     markdown = (root / "README.md").read_text(encoding="utf-8")
 
